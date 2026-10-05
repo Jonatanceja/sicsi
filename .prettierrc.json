@@ -1,0 +1,40 @@
+{
+  "endWithNewLine": true,
+  "tabWidth": 2,
+  "plugins": ["prettier-plugin-blade", "prettier-plugin-tailwindcss"],
+  "overrides": [
+    {
+      "files": ["*.js"],
+      "options": {
+        "printWidth": 180,
+        "singleQuote": true,
+        "semi": false
+      }
+    },
+    {
+      "files": ["*.vue"],
+      "options": {
+        "semi": false,
+        "printWidth": 180,
+        "singleQuote": true,
+        "jsxSingleQuote": false,
+        "vueIndentScriptAndStyle": true
+      }
+    },
+    {
+      "files": ["*.blade.php"],
+      "options": {
+        "parser": "blade",
+        "printWidth": 120,
+        "tabWidth": 4,
+        "singleQuote": true,
+        "htmlWhitespaceSensitivity": "css",
+        "bladePhpFormatting": "off",
+        "bladePhpFormattingTargets": [],
+        "bladeDirectiveArgSpacing": "none",
+        "bladeEchoSpacing": "space",
+        "bladeInlineIntentElements": ["svg", "svg:*"]
+      }
+    }
+  ]
+}

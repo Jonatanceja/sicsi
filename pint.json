@@ -1,0 +1,15 @@
+{
+  "preset": "laravel",
+  "rules": {
+    "Pint/laravel_blade": true
+  },
+  "exclude": [
+    "site/plugins/kirby-blade",
+    "site/plugins/kirby-courier",
+    "site/plugins/kirby-email-plus",
+    "site/plugins/kirby-enum",
+    "site/plugins/kirby-env",
+    "site/plugins/kirby-scheduler",
+    "site/plugins/kirby-sign"
+  ]
+}
