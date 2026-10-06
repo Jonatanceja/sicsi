@@ -24,9 +24,17 @@ export default ({ endpoint, success, error, extras = {} }) => ({
   },
 
   async submit() {
-    if (this.status === 'sending' || !this.validate()) return
+    if (this.status === 'sending') return
+
+    if (!this.validate()) {
+      // Move focus to the first invalid field so keyboard and screen reader users land on it
+      const first = Object.keys(this.errors)[0]
+      this.$root.querySelector(`#q-${first}`)?.focus()
+      return
+    }
 
     this.status = 'sending'
+    this.message = ''
 
     const { name, company, email, phone, website } = this.fields
     const extra = Object.fromEntries(Object.entries(extras).map(([key, label]) => [label, this.fields[key]]))

@@ -1,7 +1,7 @@
 label: Garantía
 icon: shield
 sections:
-  content:
+  guaranteeFields:
     type: fields
     fields:
       guaranteeBadge:

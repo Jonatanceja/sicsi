@@ -42,7 +42,7 @@
         <div class="container-x flex items-center justify-between gap-4 px-4 py-3 sm:px-6 lg:px-8">
             <a href="{{ $site->url() }}" class="flex items-center gap-3">
                 @if ($logo = $site->brandLogo()->toFile())
-                    <img src="{{ $logo->url() }}" alt="{{ $site->brandName() }}" class="h-10 w-auto sm:h-11" />
+                    <x-img :file="$logo" :eager="true" alt="{{ $site->brandName() }}" class="h-10 w-auto sm:h-11" />
                 @else
                     <span class="grid size-9 place-items-center rounded-lg bg-brand-500 text-white">
                         <x-icon name="shield-check" class="size-5" />
@@ -58,7 +58,7 @@
 
             <nav class="hidden items-center gap-1 rounded-full border border-slate-200 bg-slate-50 p-1 md:flex" aria-label="Principal">
                 @foreach ($site->navItems()->toStructure() as $item)
-                    <a href="{{ url($item->url()->value()) }}" @if ($isActive($item->url()->value())) aria-current="page" @endif class="rounded-full px-4 py-1.5 text-sm font-semibold transition hover:bg-white hover:text-brand-600 hover:shadow-sm {{ $isActive($item->url()->value()) ? 'bg-white text-brand-600 shadow-sm' : 'text-slate-700' }}">{{ $item->label() }}</a>
+                    <a href="{{ url($item->url()->value()) }}" @if ($isActive($item->url()->value())) aria-current="page" @endif class="rounded-full px-4 py-1.5 text-sm font-semibold transition hover:bg-white hover:text-brand-700 hover:shadow-sm {{ $isActive($item->url()->value()) ? 'bg-white text-brand-700 shadow-sm' : 'text-slate-700' }}">{{ $item->label() }}</a>
                 @endforeach
             </nav>
 
@@ -69,7 +69,7 @@
                         <x-icon :name="$site->navCtaIcon()->value() ?: 'arrow-right'" class="size-4" />
                     </a>
                 @endif
-                <button type="button" @click="toggle" class="grid size-10 place-items-center rounded-lg border border-slate-300 text-slate-700 md:hidden" :aria-expanded="open" aria-label="Menú">
+                <button type="button" @click="toggle" class="grid size-10 place-items-center rounded-lg border border-slate-300 text-slate-700 md:hidden" :aria-expanded="open.toString()" aria-controls="menu-movil" :aria-label="open ? 'Cerrar menú' : 'Abrir menú'">
                     <x-icon name="bars-3" x-show="!open" />
                     <x-icon name="x-mark" x-show="open" x-cloak />
                 </button>
@@ -77,7 +77,7 @@
         </div>
 
         {{-- Mobile menu --}}
-        <nav x-show="open" x-cloak x-transition.opacity @click.outside="close" class="border-t border-slate-200 bg-white px-4 py-4 md:hidden" aria-label="Móvil">
+        <nav id="menu-movil" x-show="open" x-cloak x-transition.opacity @click.outside="close" class="border-t border-slate-200 bg-white px-4 py-4 md:hidden" aria-label="Principal (móvil)">
             <ul class="space-y-1">
                 @foreach ($site->navItems()->toStructure() as $item)
                     <li><a href="{{ url($item->url()->value()) }}" @click="close" class="block rounded-lg px-3 py-2.5 text-sm font-semibold text-slate-700 hover:bg-slate-100">{{ $item->label() }}</a></li>

@@ -1,7 +1,7 @@
 @props(['page'])
 <section class="section bg-white">
     <div class="container-x">
-        <span class="eyebrow">{{ $page->goalsEyebrow() }}</span>
+        <span x-reveal class="eyebrow">{{ $page->goalsEyebrow() }}</span>
         <h2 x-reveal class="mt-3 text-3xl font-extrabold text-slate-900 sm:text-4xl">{{ $page->goalsTitle() }}</h2>
         <p x-reveal.100 class="mt-3 text-slate-600">{{ $page->goalsText() }}</p>
 
@@ -9,7 +9,7 @@
             @foreach ($page->goals()->toStructure() as $goal)
                 <article x-reveal.{{ $loop->index * 100 }} class="card flex flex-col bg-slate-50 p-7">
                     <div class="flex items-start justify-between">
-                        <p class="font-display text-5xl font-extrabold text-brand-600">{{ $goal->value() }}</p>
+                        <p x-countup class="font-display text-5xl font-extrabold text-brand-700">{{ $goal->value() }}</p>
                         <span class="grid size-9 place-items-center rounded-lg bg-white text-emerald-600 shadow-sm">
                             <x-icon :name="$goal->icon()->value() ?: 'check-circle'" class="size-5" />
                         </span>

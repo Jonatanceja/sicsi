@@ -1,7 +1,7 @@
 label: Consultoría
 icon: shield
 sections:
-  content:
+  consultingFields:
     type: fields
     fields:
       consultingEyebrow:

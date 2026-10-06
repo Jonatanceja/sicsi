@@ -3,7 +3,7 @@
     <div class="absolute inset-x-0 top-0 -z-0 h-px bg-linear-to-r from-transparent via-brand-500/60 to-transparent"></div>
     <div class="container-x relative">
         <div class="mx-auto max-w-3xl text-center">
-            <span class="eyebrow !text-brand-400">{{ $page->methodEyebrow() }}</span>
+            <span x-reveal class="eyebrow !text-brand-400">{{ $page->methodEyebrow() }}</span>
             <h2 x-reveal class="mt-3 text-3xl font-extrabold sm:text-4xl">{{ $page->methodTitle() }}</h2>
             <p x-reveal.100 class="mt-4 text-slate-400">{{ $page->methodText() }}</p>
         </div>

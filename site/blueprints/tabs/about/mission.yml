@@ -1,7 +1,7 @@
 label: Misión y visión
 icon: bolt
 sections:
-  content:
+  missionFields:
     type: fields
     fields:
       missionEyebrow:

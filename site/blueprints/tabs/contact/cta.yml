@@ -1,7 +1,7 @@
 label: Llamado urgente
 icon: megaphone
 sections:
-  content:
+  ctaFields:
     type: fields
     fields:
       ctaIcon:

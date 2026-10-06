@@ -3,7 +3,7 @@
     <div class="container-x">
         <div class="flex flex-col gap-6 lg:flex-row lg:items-end lg:justify-between">
             <div class="max-w-3xl">
-                <span class="eyebrow before:size-1.5 before:rounded-full before:bg-brand-500 before:content-['']">{{ $page->trainingEyebrow() }}</span>
+                <span x-reveal class="eyebrow before:size-1.5 before:rounded-full before:bg-brand-500 before:content-['']">{{ $page->trainingEyebrow() }}</span>
                 <h2 x-reveal class="mt-3 text-3xl font-extrabold text-slate-900 sm:text-4xl">{{ $page->trainingTitle() }}</h2>
                 <p x-reveal.100 class="mt-4 text-slate-600">{{ $page->trainingText() }}</p>
             </div>
@@ -19,7 +19,7 @@
             @foreach ($page->trainingCards()->toStructure() as $card)
                 <article x-reveal.{{ ($loop->index % 3) * 100 }} class="card flex flex-col">
                     <div class="flex items-center justify-between">
-                        <span class="font-mono text-[0.65rem] font-bold tracking-wider text-brand-600">{{ $card->code() }}</span>
+                        <span class="font-mono text-[0.65rem] font-bold tracking-wider text-brand-700">{{ $card->code() }}</span>
                         <span class="flex items-center gap-1 text-[0.65rem] font-semibold text-slate-400">
                             <x-icon name="clock" class="size-3.5" />
                             {{ $card->hours() }}
@@ -39,7 +39,7 @@
                             {{ $card->proof() }}
                         </span>
                         @if ($page->trainingCtaLabel()->isNotEmpty())
-                            <a href="{{ url($page->trainingCtaUrl()->or('/#cotizar')->value()) }}" class="group inline-flex items-center gap-1 text-brand-600">
+                            <a href="{{ url($page->trainingCtaUrl()->or('/#cotizar')->value()) }}" class="group inline-flex items-center gap-1 text-brand-700">
                                 {{ $page->trainingCtaLabel() }}
                                 <x-icon name="arrow-right" class="size-3.5 transition group-hover:translate-x-1" />
                             </a>

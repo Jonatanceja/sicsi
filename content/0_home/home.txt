@@ -2,7 +2,7 @@ Title: Inicio
 
 ----
 
-Heroimage: 
+Heroimage: - file://rre6kqekghkxyh5d
 
 ----
 
@@ -147,7 +147,7 @@ Guaranteechecks:
 
 ----
 
-Allyimage: 
+Allyimage: - file://ooxowxpoessmimak
 
 ----
 
@@ -438,13 +438,13 @@ Quotecontacts:
 - 
   icon: phone
   label: Línea directa nacional
-  value: +52 (55) 5824-0912
-  url: tel:+525558240912
+  value: +52 (33) 2187-1162
+  url: tel:+523321871162
 - 
   icon: chat-bubble
   label: Atención inmediata por WhatsApp
-  value: +52 (55) 3412-8890
-  url: https://wa.me/525534128890
+  value: +52 (33) 2187-1162
+  url: https://wa.me/523321871162
 
 ----
 

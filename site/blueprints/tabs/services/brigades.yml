@@ -1,7 +1,7 @@
 label: Brigadas
 icon: users
 sections:
-  content:
+  brigadesFields:
     type: fields
     fields:
       brigadesEyebrow:

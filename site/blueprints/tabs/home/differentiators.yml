@@ -1,7 +1,7 @@
 label: Diferenciadores
 icon: star
 sections:
-  content:
+  differentiatorsFields:
     type: fields
     fields:
       diffEyebrow:

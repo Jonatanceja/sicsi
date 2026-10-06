@@ -1,7 +1,7 @@
 label: Proceso
 icon: list-bullet
 sections:
-  content:
+  processFields:
     type: fields
     fields:
       processEyebrow:

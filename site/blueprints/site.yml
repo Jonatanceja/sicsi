@@ -20,7 +20,7 @@ tabs:
     label: Logotipo
     icon: image
     sections:
-      content:
+      brandFields:
         type: fields
         fields:
           brandLogo:
@@ -53,7 +53,7 @@ tabs:
     label: Encabezado
     icon: window
     sections:
-      content:
+      headerFields:
         type: fields
         fields:
           topBarPhoneIcon:
@@ -120,7 +120,7 @@ tabs:
     label: Pie de página
     icon: info-card
     sections:
-      content:
+      footerFields:
         type: fields
         fields:
           footerDescription:
@@ -228,7 +228,7 @@ tabs:
     label: Formulario
     icon: edit
     sections:
-      content:
+      formFields:
         type: fields
         fields:
           formInfo:
@@ -351,6 +351,10 @@ tabs:
           formError:
             label: Mensaje de error
             type: text
+          formFieldError:
+            label: Mensaje de campo inválido
+            type: text
+            help: Aparece bajo cada campo obligatorio que falta o es incorrecto.
 
   leads:
     label: Solicitudes
@@ -372,7 +376,7 @@ tabs:
     label: SEO
     icon: search
     sections:
-      content:
+      seoFields:
         type: fields
         fields:
           seoDefaultsHeadline:

@@ -2,7 +2,7 @@ Title: Servicios
 
 ----
 
-Heroimage: 
+Heroimage: - file://ousnvb2vbz8ywfa9
 
 ----
 
@@ -421,13 +421,13 @@ Quotecontacts:
 - 
   icon: phone
   label: Línea directa industrial
-  value: +52 (55) 5824-0912
-  url: tel:+525558240912
+  value: +52 (33) 2187-1162
+  url: tel:+523321871162
 - 
   icon: envelope
   label: Mesa de cotizaciones corporativas
-  value: contacto@sicsi.com.mx
-  url: mailto:contacto@sicsi.com.mx
+  value: integral.seguridad@gmail.com
+  url: mailto:integral.seguridad@gmail.com
 - 
   icon: shield-check
   label: Registro acreditado

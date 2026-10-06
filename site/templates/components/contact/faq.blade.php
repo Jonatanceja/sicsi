@@ -2,7 +2,7 @@
 <section class="section bg-white">
     <div class="container-x max-w-4xl">
         <div class="text-center">
-            <span class="eyebrow">{{ $page->faqEyebrow() }}</span>
+            <span x-reveal class="eyebrow">{{ $page->faqEyebrow() }}</span>
             <h2 x-reveal class="mt-3 text-3xl font-extrabold text-slate-900 sm:text-4xl">{{ $page->faqTitle() }}</h2>
             <p x-reveal.100 class="mx-auto mt-4 max-w-2xl text-slate-600">{{ $page->faqText() }}</p>
         </div>
@@ -13,7 +13,7 @@
                     <h3>
                         <button type="button" @click="open = open === {{ $loop->index }} ? null : {{ $loop->index }}" :aria-expanded="open === {{ $loop->index }}" class="flex w-full items-center justify-between gap-4 px-5 py-4 text-left text-sm font-bold text-slate-900 sm:text-base">
                             {{ $item->question() }}
-                            <x-icon name="chevron-down" class="size-5 shrink-0 text-brand-600 transition duration-300" ::class="open === {{ $loop->index }} && 'rotate-180'" />
+                            <x-icon name="chevron-down" class="size-5 shrink-0 text-brand-700 transition duration-300" ::class="open === {{ $loop->index }} && 'rotate-180'" />
                         </button>
                     </h3>
                     <div x-show="open === {{ $loop->index }}" x-collapse x-cloak>

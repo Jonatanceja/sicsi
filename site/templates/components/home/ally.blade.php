@@ -4,11 +4,11 @@
 @endphp
 <section id="nosotros" class="section bg-white">
     <div class="container-x grid items-center gap-12 lg:grid-cols-2 lg:gap-16">
-        <div x-reveal class="relative">
+        <div x-reveal.left class="relative">
             <div class="absolute -inset-4 -z-10 rounded-[2rem] bg-linear-to-br from-brand-500/20 to-transparent blur-2xl"></div>
             <div class="relative aspect-[4/3] overflow-hidden rounded-3xl bg-ink-800 shadow-2xl shadow-slate-900/20">
                 @if ($image)
-                    <img src="{{ $image->url() }}" alt="{{ $image->alt()->or($page->allyTitle()) }}" class="size-full object-cover" loading="lazy" />
+                    <x-img :file="$image" alt="{{ $image->alt()->or($page->allyTitle()) }}" srcset="card" :width="800" sizes="(min-width: 1024px) 560px, 100vw" class="size-full object-cover" />
                 @else
                     <div class="grid size-full place-items-center bg-linear-to-br from-ink-800 to-ink-950">
                         <x-icon name="user-group" class="size-20 text-white/10" />
@@ -30,14 +30,14 @@
         </div>
 
         <div>
-            <span class="eyebrow">{{ $page->allyEyebrow() }}</span>
+            <span x-reveal class="eyebrow">{{ $page->allyEyebrow() }}</span>
             <h2 x-reveal class="mt-3 text-3xl font-extrabold text-slate-900 sm:text-4xl">{{ $page->allyTitle() }}</h2>
             <p x-reveal.100 class="mt-4 leading-relaxed text-slate-600">{{ $page->allyText() }}</p>
 
             <ul class="mt-8 grid gap-4 sm:grid-cols-3">
                 @foreach ($page->allyItems()->toStructure() as $item)
                     <li x-reveal.{{ $loop->index * 100 }} class="rounded-2xl border border-slate-200 bg-slate-50 p-4 transition hover:border-brand-500/40 hover:bg-white">
-                        <x-icon :name="$item->icon()->value() ?: 'check-circle'" class="size-6 text-brand-600" />
+                        <x-icon :name="$item->icon()->value() ?: 'check-circle'" class="size-6 text-brand-700" />
                         <h3 class="mt-3 text-sm font-bold text-slate-900">{{ $item->title() }}</h3>
                         <p class="mt-1.5 text-xs leading-relaxed text-slate-500">{{ $item->text() }}</p>
                     </li>

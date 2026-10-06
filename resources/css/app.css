@@ -15,6 +15,7 @@
     --color-brand-400: #fb923c;
     --color-brand-500: #f97316;
     --color-brand-600: #ea580c;
+    --color-brand-700: #c2410c;
 
     --animate-fade-up: fade-up 0.7s ease-out both;
 
@@ -34,6 +35,27 @@
     html {
         scroll-behavior: smooth;
         scroll-padding-top: 6rem;
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+        html {
+            scroll-behavior: auto;
+        }
+
+        *,
+        *::before,
+        *::after {
+            transition-duration: 0.01ms !important;
+            animation-duration: 0.01ms !important;
+        }
+    }
+
+    a:focus-visible,
+    button:focus-visible,
+    summary:focus-visible {
+        outline: 2px solid var(--color-brand-500);
+        outline-offset: 2px;
+        border-radius: 0.25rem;
     }
 
     body {
@@ -62,7 +84,7 @@
     }
 
     .eyebrow {
-        @apply inline-flex items-center gap-2 text-[0.7rem] font-bold tracking-[0.18em] text-brand-600 uppercase;
+        @apply inline-flex items-center gap-2 text-[0.7rem] font-bold tracking-[0.18em] text-brand-700 uppercase;
     }
 
     .section {
@@ -78,6 +100,55 @@
     }
 }
 
+/* Entrance animations (see resources/js/components/reveal.js) */
+.reveal {
+    opacity: 0;
+    transition:
+        opacity 0.8s ease-out,
+        transform 0.8s cubic-bezier(0.2, 0.7, 0.2, 1);
+    will-change: opacity, transform;
+}
+
+.reveal-up {
+    transform: translate3d(0, 1.5rem, 0);
+}
+
+.reveal-down {
+    transform: translate3d(0, -1.5rem, 0);
+}
+
+.reveal-left {
+    transform: translate3d(-2rem, 0, 0);
+}
+
+.reveal-right {
+    transform: translate3d(2rem, 0, 0);
+}
+
+.reveal-zoom {
+    transform: scale(0.94);
+}
+
+.reveal.is-visible {
+    opacity: 1;
+    transform: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .animate-fade-up {
+        animation: none;
+    }
+}
+
 [x-cloak] {
     display: none !important;
+}
+
+.select-chevron {
+    appearance: none;
+    padding-right: 2.5rem;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20' fill='none' stroke='%2364748b' stroke-width='1.75' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m5 7.5 5 5 5-5'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 0.875rem center;
+    background-size: 1.1rem;
 }

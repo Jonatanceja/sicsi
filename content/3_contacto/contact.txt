@@ -2,7 +2,7 @@ Title: Contacto
 
 ----
 
-Heroimage: 
+Heroimage: - file://bf4oti1u7tk4fvdn
 
 ----
 
@@ -52,16 +52,16 @@ Channels:
 
 - 
   icon: phone
-  label: Línea telefónica directa / conmutador
-  value: +52 (55) 5824-0912
-  url: tel:+525558240912
+  label: Línea telefónica directa
+  value: +52 (33) 2187-1162
+  url: tel:+523321871162
   text: 'Horario: Lunes a Viernes 08:00 - 18:00 hrs'
   highlighted: 'false'
 - 
   icon: chat-bubble
   label: WhatsApp directo a coordinación
-  value: +52 (55) 3412-8890
-  url: https://wa.me/525534128890
+  value: +52 (33) 2187-1162
+  url: https://wa.me/523321871162
   text: >
     Respuesta inmediata para requerimientos
     de contingencia e inspecciones STPS.
@@ -69,8 +69,8 @@ Channels:
 - 
   icon: envelope
   label: 'Mesa de cotizaciones & licitaciones'
-  value: contacto@sicsi.com.mx
-  url: mailto:contacto@sicsi.com.mx
+  value: integral.seguridad@gmail.com
+  url: mailto:integral.seguridad@gmail.com
   text: >
     Emisión de cotizaciones corporativas
     formales con validez fiscal.
@@ -214,7 +214,7 @@ Ctatext: Llama directamente a nuestra línea de atención prioritaria para audit
 
 ----
 
-Ctaprimarylabel: Llamar: +52 (55) 5824-0912
+Ctaprimarylabel: Llamar: +52 (33) 2187-1162
 
 ----
 
@@ -222,7 +222,7 @@ Ctaprimaryicon: phone
 
 ----
 
-Ctaprimaryurl: tel:+525558240912
+Ctaprimaryurl: tel:+523321871162
 
 ----
 
@@ -234,7 +234,7 @@ Ctasecondaryicon: chat-bubble
 
 ----
 
-Ctasecondaryurl: https://wa.me/525534128890
+Ctasecondaryurl: https://wa.me/523321871162
 
 ----
 

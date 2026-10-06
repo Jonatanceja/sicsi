@@ -5,7 +5,7 @@
             {{-- Channels --}}
             <div x-reveal class="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
                 <h2 class="flex items-center gap-2.5 text-base font-bold text-slate-900">
-                    <x-icon :name="$page->channelsIcon()->value() ?: 'phone'" class="size-5 text-brand-600" />
+                    <x-icon :name="$page->channelsIcon()->value() ?: 'phone'" class="size-5 text-brand-700" />
                     {{ $page->channelsTitle() }}
                 </h2>
                 <ul class="mt-5 space-y-3">
@@ -32,7 +32,7 @@
 
                 @if ($page->note()->isNotEmpty())
                     <div class="mt-4 rounded-xl border border-brand-500/20 bg-brand-500/5 p-4">
-                        <p class="flex items-center gap-1.5 text-[0.6rem] font-bold tracking-wider text-brand-600 uppercase">
+                        <p class="flex items-center gap-1.5 text-[0.6rem] font-bold tracking-wider text-brand-700 uppercase">
                             <x-icon :name="$page->noteIcon()->value() ?: 'shield-check'" class="size-4" />
                             {{ $page->noteTag() }}
                         </p>
@@ -44,7 +44,7 @@
             {{-- Offices --}}
             <div x-reveal.100 class="rounded-2xl border border-slate-200 border-t-4 border-t-brand-600 bg-white p-6 shadow-sm">
                 <h2 class="flex items-center gap-2.5 text-base font-bold text-slate-900">
-                    <x-icon :name="$page->officesIcon()->value() ?: 'building-office'" class="size-5 text-brand-600" />
+                    <x-icon :name="$page->officesIcon()->value() ?: 'building-office'" class="size-5 text-brand-700" />
                     {{ $page->officesTitle() }}
                 </h2>
                 <ul class="mt-5 divide-y divide-slate-100">
@@ -74,6 +74,6 @@
             @endif
         </div>
 
-        <x-quote-form x-reveal.100 class="lg:col-span-3" />
+        <x-quote-form x-reveal.right.100 class="lg:col-span-3" />
     </div>
 </section>

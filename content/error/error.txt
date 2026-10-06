@@ -79,11 +79,11 @@ Errorcontacttext: ¿Necesitas ayuda inmediata? Llámanos al
 
 ----
 
-Errorcontactlabel: +52 (55) 5824-0912
+Errorcontactlabel: +52 (33) 2187-1162
 
 ----
 
-Errorcontacturl: tel:+525558240912
+Errorcontacturl: tel:+523321871162
 
 ----
 

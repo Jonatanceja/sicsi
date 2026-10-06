@@ -3,7 +3,7 @@
     <div class="absolute -right-40 -bottom-40 size-[36rem] rounded-full bg-brand-500/15 blur-3xl"></div>
     <div class="container-x relative grid items-start gap-12 lg:grid-cols-2 lg:gap-16">
         <div class="lg:pt-8">
-            <span class="eyebrow !text-brand-400">{{ $page->quoteEyebrow() }}</span>
+            <span x-reveal class="eyebrow !text-brand-400">{{ $page->quoteEyebrow() }}</span>
             <h2 x-reveal class="mt-3 text-3xl font-extrabold sm:text-4xl lg:text-5xl">{{ $page->quoteTitle() }}</h2>
             <p x-reveal.100 class="mt-5 max-w-lg leading-relaxed text-slate-300">{{ $page->quoteText() }}</p>
 
@@ -31,6 +31,6 @@
             @endif
         </div>
 
-        <x-quote-form x-reveal.100 />
+        <x-quote-form x-reveal.right.100 />
     </div>
 </section>

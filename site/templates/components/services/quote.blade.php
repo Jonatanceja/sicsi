@@ -1,10 +1,10 @@
 @props(['page'])
 <section id="cotizar" class="section bg-slate-50">
     <div class="container-x grid items-start gap-6 lg:grid-cols-5">
-        <div class="relative overflow-hidden rounded-3xl bg-ink-950 p-8 text-white sm:p-10 lg:col-span-2">
+        <div x-reveal.left class="relative overflow-hidden rounded-3xl bg-ink-950 p-8 text-white sm:p-10 lg:col-span-2">
             <div class="absolute -top-20 -left-20 size-72 rounded-full bg-brand-500/15 blur-3xl"></div>
             <div class="relative">
-                <span class="eyebrow !text-brand-400">{{ $page->quoteEyebrow() }}</span>
+                <span x-reveal class="eyebrow !text-brand-400">{{ $page->quoteEyebrow() }}</span>
                 <h2 class="mt-3 text-3xl leading-tight font-extrabold">{{ $page->quoteTitle() }}</h2>
                 <p class="mt-4 text-sm leading-relaxed text-slate-300">{{ $page->quoteText() }}</p>
 
@@ -33,6 +33,6 @@
             </div>
         </div>
 
-        <x-quote-form class="lg:col-span-3" />
+        <x-quote-form x-reveal.right.100 class="lg:col-span-3" />
     </div>
 </section>

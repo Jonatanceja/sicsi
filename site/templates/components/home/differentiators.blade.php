@@ -2,7 +2,7 @@
 <section class="section bg-slate-50">
     <div class="container-x">
         <div class="mx-auto max-w-3xl text-center">
-            <span class="eyebrow">{{ $page->diffEyebrow() }}</span>
+            <span x-reveal class="eyebrow">{{ $page->diffEyebrow() }}</span>
             <h2 x-reveal class="mt-3 text-3xl font-extrabold text-slate-900 sm:text-4xl">{{ $page->diffTitle() }}</h2>
             <p x-reveal.100 class="mt-4 text-slate-600">{{ $page->diffText() }}</p>
         </div>
@@ -13,7 +13,7 @@
                     <span class="grid size-12 place-items-center rounded-2xl bg-ink-900 text-brand-400 transition group-hover:bg-brand-500 group-hover:text-white">
                         <x-icon :name="$card->icon()->value() ?: 'star'" class="size-6" />
                     </span>
-                    <p class="mt-6 text-[0.65rem] font-bold tracking-[0.18em] text-brand-600 uppercase">{{ $card->tag() }}</p>
+                    <p class="mt-6 text-[0.65rem] font-bold tracking-[0.18em] text-brand-700 uppercase">{{ $card->tag() }}</p>
                     <h3 class="mt-2 text-xl font-bold text-slate-900">{{ $card->title() }}</h3>
                     <p class="mt-3 flex-1 text-sm leading-relaxed text-slate-600">{{ $card->text() }}</p>
                     @if ($card->footerLabel()->isNotEmpty())
@@ -22,7 +22,7 @@
                                 <x-icon :name="$card->footerIcon()->value() ?: 'check-circle'" class="size-4 text-emerald-600" />
                                 {{ $card->footerLabel() }}
                             </span>
-                            <x-icon name="arrow-right" class="size-4 text-brand-600 transition group-hover:translate-x-1" />
+                            <x-icon name="arrow-right" class="size-4 text-brand-700 transition group-hover:translate-x-1" />
                         </div>
                     @endif
                 </article>

@@ -3,7 +3,7 @@
 @endphp
 <footer class="border-t border-white/5 bg-ink-950 text-slate-400">
     <div class="container-x grid gap-12 px-4 py-16 sm:px-6 md:grid-cols-2 lg:grid-cols-4 lg:px-8">
-        <div class="space-y-5">
+        <div x-reveal class="space-y-5">
             <p class="font-display text-2xl font-extrabold text-white">{{ $site->brandName() }}</p>
             <p class="text-sm leading-relaxed">{{ $site->footerDescription() }}</p>
             @if ($site->footerBadge()->isNotEmpty())
@@ -14,8 +14,8 @@
             @endif
         </div>
 
-        <div>
-            <h3 class="mb-5 text-sm font-bold text-white">{{ $site->footerServicesTitle() }}</h3>
+        <div x-reveal.100>
+            <h2 class="mb-5 text-sm font-bold text-white">{{ $site->footerServicesTitle() }}</h2>
             <ul class="space-y-3 text-sm">
                 @foreach ($site->footerServices()->toStructure() as $item)
                     <li><a href="{{ url($item->url()->or('#')->value()) }}" class="transition hover:text-brand-400">{{ $item->label() }}</a></li>
@@ -23,8 +23,8 @@
             </ul>
         </div>
 
-        <div>
-            <h3 class="mb-5 text-sm font-bold text-white">{{ $site->footerRegulationTitle() }}</h3>
+        <div x-reveal.200>
+            <h2 class="mb-5 text-sm font-bold text-white">{{ $site->footerRegulationTitle() }}</h2>
             <ul class="space-y-3 text-sm">
                 @foreach ($site->footerRegulation()->toStructure() as $item)
                     <li><strong class="font-bold text-white">{{ $item->code() }}:</strong> {{ $item->text() }}</li>
@@ -32,8 +32,8 @@
             </ul>
         </div>
 
-        <div>
-            <h3 class="mb-5 text-sm font-bold text-white">{{ $site->footerContactTitle() }}</h3>
+        <div x-reveal.300>
+            <h2 class="mb-5 text-sm font-bold text-white">{{ $site->footerContactTitle() }}</h2>
             <div class="space-y-3 text-sm">
                 <p>{{ $site->footerContactText() }}</p>
                 @if ($site->footerPhone()->isNotEmpty())
@@ -62,10 +62,10 @@
         @if ($site->footerCreditText()->isNotEmpty())
             <div class="border-t border-white/5">
                 <div class="container-x flex items-center justify-center gap-3 px-4 py-4 text-xs sm:px-6 md:justify-end lg:px-8">
-                    <a href="{{ $site->footerCreditUrl()->or('#') }}" target="_blank" rel="noopener" class="group flex items-center gap-2.5 transition hover:text-white">
+                    <a href="{{ $site->footerCreditUrl()->or('#') }}" target="_blank" rel="noopener noreferrer" class="group flex items-center gap-2.5 transition hover:text-white">
                         <span>{{ $site->footerCreditText() }}</span>
                         @if ($credit = $site->footerCreditLogo()->toFile())
-                            <img src="{{ $credit->url() }}" alt="" class="h-5 w-auto opacity-80 transition group-hover:opacity-100" loading="lazy" />
+                            <x-img :file="$credit" class="h-5 w-auto opacity-80 transition group-hover:opacity-100" />
                         @endif
                     </a>
                 </div>

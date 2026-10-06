@@ -4,9 +4,9 @@
 @endphp
 <section id="inicio" class="relative isolate overflow-hidden bg-ink-950 text-white">
     @if ($image)
-        <img src="{{ $image->url() }}" alt="" class="absolute inset-0 -z-20 size-full object-cover opacity-40" />
+        <x-img :file="$image" :eager="true" sizes="100vw" class="absolute inset-0 -z-20 size-full object-cover opacity-70" />
     @endif
-    <div class="absolute inset-0 -z-10 bg-linear-to-b from-ink-950/60 via-ink-950/80 to-ink-950"></div>
+    <div class="absolute inset-0 -z-10 bg-linear-to-b from-ink-950/30 via-ink-950/55 to-ink-950"></div>
     <div class="absolute -top-40 left-1/2 -z-10 h-[32rem] w-[48rem] -translate-x-1/2 rounded-full bg-brand-500/20 blur-3xl"></div>
     <div class="absolute inset-0 -z-10 bg-[linear-gradient(to_right,rgb(255_255_255/0.04)_1px,transparent_1px),linear-gradient(to_bottom,rgb(255_255_255/0.04)_1px,transparent_1px)] bg-[size:3.5rem_3.5rem] mask-[radial-gradient(ellipse_at_center,black_30%,transparent_75%)]"></div>
 

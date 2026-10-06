@@ -2,7 +2,7 @@ Title: Nosotros
 
 ----
 
-Heroimage: 
+Heroimage: - file://ogamv9u1lkrimupt
 
 ----
 

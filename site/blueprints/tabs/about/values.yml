@@ -1,7 +1,7 @@
 label: Valores
 icon: heart
 sections:
-  content:
+  valuesFields:
     type: fields
     fields:
       valuesEyebrow:

@@ -1,7 +1,7 @@
 label: Capacitación
 icon: file-document
 sections:
-  content:
+  trainingFields:
     type: fields
     fields:
       trainingEyebrow:

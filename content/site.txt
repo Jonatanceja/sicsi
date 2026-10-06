@@ -22,7 +22,7 @@ Topbarphoneicon: phone
 
 ----
 
-Topbarphone: +52 (55) 5824-0912
+Topbarphone: +52 (33) 2187-1162
 
 ----
 
@@ -30,7 +30,7 @@ Topbaremailicon: envelope
 
 ----
 
-Topbaremail: contacto@sicsi.com.mx
+Topbaremail: integral.seguridad@gmail.com
 
 ----
 
@@ -149,11 +149,11 @@ Footercontacttext: Atención a nivel nacional con redes operativas en zonas metr
 
 ----
 
-Footerphone: +52 (55) 5824-0912
+Footerphone: +52 (33) 2187-1162
 
 ----
 
-Footeremail: contacto@sicsi.com.mx
+Footeremail: integral.seguridad@gmail.com
 
 ----
 
@@ -334,6 +334,10 @@ Formerror: No pudimos enviar tu solicitud. Revisa los datos e inténtalo de nuev
 
 ----
 
+Formfielderror: Revisa este campo.
+
+----
+
 Seotitleseparator: |
 
 ----
@@ -358,7 +362,7 @@ Seooglocale: es_MX
 
 ----
 
-Seoogimage: 
+Seoogimage: - file://h0qjmn8ipazj0zeq
 
 ----
 

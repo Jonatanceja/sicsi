@@ -1,7 +1,7 @@
 label: Mensaje
 icon: alert
 sections:
-  content:
+  messageFields:
     type: fields
     fields:
       errorIcon:

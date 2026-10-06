@@ -1,7 +1,7 @@
 label: Aliado
 icon: users
 sections:
-  content:
+  allyFields:
     type: fields
     fields:
       allyImage:

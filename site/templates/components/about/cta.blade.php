@@ -3,7 +3,7 @@
     <div class="absolute -right-32 -bottom-32 size-[30rem] rounded-full bg-brand-500/15 blur-3xl"></div>
     <div class="container-x relative flex flex-col gap-10 lg:flex-row lg:items-center lg:justify-between">
         <div class="max-w-2xl">
-            <span class="eyebrow !text-brand-400">
+            <span x-reveal class="eyebrow !text-brand-400">
                 @if ($page->ctaEyebrowIcon()->isNotEmpty())
                     <x-icon :name="$page->ctaEyebrowIcon()->value()" class="size-4" />
                 @endif

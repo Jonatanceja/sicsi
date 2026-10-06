@@ -6,6 +6,31 @@ use Kirby\Toolkit\Str;
 use Kirby\Toolkit\V;
 
 return [
+    [
+        'pattern' => 'robots.txt',
+        'action' => function () {
+            $kirby = App::instance();
+            $body = "User-agent: *\nDisallow: /panel\nDisallow: /solicitudes\nDisallow: /cotizar\n\nSitemap: ".$kirby->url()."/sitemap.xml\n";
+
+            return new Response($body, 'text/plain');
+        },
+    ],
+    [
+        'pattern' => 'sitemap.xml',
+        'action' => function () {
+            $kirby = App::instance();
+            $pages = $kirby->site()->index()->listed()->filter(
+                fn ($page) => $page->intendedTemplate()->name() !== 'error' && $page->seoRobots()->value() !== 'noindex,nofollow'
+            );
+
+            $urls = '';
+            foreach ($pages as $page) {
+                $urls .= '  <url><loc>'.htmlspecialchars($page->url(), ENT_XML1).'</loc><lastmod>'.$page->modified('Y-m-d').'</lastmod></url>'."\n";
+            }
+
+            return new Response('<?xml version="1.0" encoding="UTF-8"?>'."\n".'<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">'."\n".$urls.'</urlset>'."\n", 'application/xml');
+        },
+    ],
     // Leads are private Panel content: never render them on the public site
     [
         'pattern' => ['solicitudes', 'solicitudes/(:all)'],

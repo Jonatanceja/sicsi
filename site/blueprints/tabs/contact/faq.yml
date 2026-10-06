@@ -1,7 +1,7 @@
 label: Preguntas frecuentes
 icon: question
 sections:
-  content:
+  faqFields:
     type: fields
     fields:
       faqEyebrow:

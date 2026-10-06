@@ -1,7 +1,7 @@
 label: Objetivos
 icon: flag
 sections:
-  content:
+  goalsFields:
     type: fields
     fields:
       goalsEyebrow:

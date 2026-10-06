@@ -3,7 +3,7 @@
     <div class="container-x">
         <div class="flex flex-col gap-6 md:flex-row md:items-end md:justify-between">
             <div class="max-w-2xl">
-                <span class="eyebrow">
+                <span x-reveal class="eyebrow">
                     <x-icon :name="$page->normsEyebrowIcon()->value() ?: 'document-text'" class="size-4" />
                     {{ $page->normsEyebrow() }}
                 </span>
@@ -11,7 +11,7 @@
                 <p x-reveal.100 class="mt-4 text-slate-600">{{ $page->normsText() }}</p>
             </div>
             @if ($page->normsLinkLabel()->isNotEmpty())
-                <a href="{{ $page->normsLinkUrl() }}" class="group inline-flex items-center gap-2 text-xs font-bold tracking-wider text-brand-600 uppercase">
+                <a href="{{ $page->normsLinkUrl() }}" class="group inline-flex items-center gap-2 text-xs font-bold tracking-wider text-brand-700 uppercase">
                     {{ $page->normsLinkLabel() }}
                     <x-icon name="arrow-right" class="size-4 transition group-hover:translate-x-1" />
                 </a>
@@ -28,7 +28,7 @@
                     <h3 class="mt-5 text-lg font-bold text-slate-900">{{ $card->title() }}</h3>
                     <p class="mt-2 flex-1 text-sm leading-relaxed text-slate-600">{{ $card->text() }}</p>
                     <div class="mt-5 flex flex-wrap items-center gap-x-5 gap-y-2 border-t border-slate-100 pt-4 text-xs font-semibold text-slate-600">
-                        <span class="flex items-center gap-1.5"><x-icon :name="$page->normsHoursIcon()->value() ?: 'clock'" class="size-4 text-brand-600" />{{ $card->hours() }}</span>
+                        <span class="flex items-center gap-1.5"><x-icon :name="$page->normsHoursIcon()->value() ?: 'clock'" class="size-4 text-brand-700" />{{ $card->hours() }}</span>
                         <span class="flex items-center gap-1.5"><x-icon :name="$page->normsProofIcon()->value() ?: 'check-circle'" class="size-4 text-emerald-600" />{{ $card->proof() }}</span>
                     </div>
                 </article>

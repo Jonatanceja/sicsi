@@ -1,7 +1,7 @@
 label: Canales y sedes
 icon: chat
 sections:
-  content:
+  channelsFields:
     type: fields
     fields:
       channelsIcon:

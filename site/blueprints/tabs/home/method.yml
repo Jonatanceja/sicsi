@@ -1,7 +1,7 @@
 label: Metodología
 icon: list-bullet
 sections:
-  content:
+  methodFields:
     type: fields
     fields:
       methodEyebrow:

@@ -10,12 +10,58 @@
     $url = $page->url();
     $siteName = $site->seoOgSiteName()->or($site->title())->value();
 
-    $image = $page->ogImage()->toFile() ?? $site->seoOgImage()->toFile();
+    $image = $page->ogImage()->toFile() ?? $site->seoOgImage()->toFile() ?? $page->heroImage()->toFile();
     $imageUrl = null;
     if ($image) {
         $imageUrl = $image->extension() === 'svg'
             ? $image->url()
-            : $image->thumb(['width' => 1200, 'height' => 630, 'crop' => true])->url();
+            : $image->thumb(['width' => 1200, 'height' => 630, 'crop' => true, 'format' => 'jpg'])->url();
+    }
+
+    $logoFile = $site->brandLogo()->toFile();
+    $phone = preg_replace('/[^\d+]/', '', $site->footerPhone()->value());
+    $schema = [
+        '@context' => 'https://schema.org',
+        '@graph' => [
+            array_filter([
+                '@type' => 'Organization',
+                '@id' => $site->url().'/#organization',
+                'name' => $siteName,
+                'url' => $site->url(),
+                'logo' => $logoFile?->url(),
+                'image' => $imageUrl,
+                'description' => $site->seoDescription()->value() ?: null,
+                'email' => $site->footerEmail()->value() ?: null,
+                'telephone' => $phone ?: null,
+                'areaServed' => ['@type' => 'Country', 'name' => 'México'],
+            ]),
+            [
+                '@type' => 'WebSite',
+                '@id' => $site->url().'/#website',
+                'url' => $site->url(),
+                'name' => $siteName,
+                'inLanguage' => 'es-MX',
+                'publisher' => ['@id' => $site->url().'/#organization'],
+            ],
+        ],
+    ];
+    if (! $page->isHomePage() && ! $isError) {
+        $schema['@graph'][] = [
+            '@type' => 'WebPage',
+            '@id' => $url.'#webpage',
+            'url' => $url,
+            'name' => $title,
+            'description' => $description ?: null,
+            'isPartOf' => ['@id' => $site->url().'/#website'],
+            'inLanguage' => 'es-MX',
+        ];
+        $schema['@graph'][] = [
+            '@type' => 'BreadcrumbList',
+            'itemListElement' => [
+                ['@type' => 'ListItem', 'position' => 1, 'name' => 'Inicio', 'item' => $site->url()],
+                ['@type' => 'ListItem', 'position' => 2, 'name' => $page->title()->value(), 'item' => $url],
+            ],
+        ];
     }
 
     $ogTitle = $page->ogTitle()->or($title)->value();
@@ -64,3 +110,7 @@
 @if ($site->seoTwitterSite()->isNotEmpty())
     <meta name="twitter:site" content="{{ $site->seoTwitterSite() }}" />
 @endif
+
+@unless ($isError)
+    <script type="application/ld+json">{!! json_encode($schema, JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES | JSON_HEX_TAG) !!}</script>
+@endunless
