@@ -1,0 +1,12 @@
+title: Error 404
+
+options:
+  changeSlug: false
+  changeStatus: false
+  changeTemplate: false
+  delete: false
+  duplicate: false
+
+tabs:
+  message: tabs/error/message
+  links: tabs/error/links

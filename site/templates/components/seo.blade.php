@@ -5,7 +5,8 @@
     $separator = $site->seoTitleSeparator()->or('|');
     $title = $page->seoTitle()->or($page->title().' '.$separator.' '.$site->title())->value();
     $description = $page->seoDescription()->or($site->seoDescription())->value();
-    $robots = $page->seoRobots()->or($site->seoRobots())->or('index,follow')->value();
+    $isError = $page->intendedTemplate()->name() === 'error';
+    $robots = $isError ? 'noindex,nofollow' : $page->seoRobots()->or($site->seoRobots())->or('index,follow')->value();
     $url = $page->url();
     $siteName = $site->seoOgSiteName()->or($site->title())->value();
 
@@ -29,7 +30,9 @@
 @endif
 <meta name="robots" content="{{ $robots }}" />
 <meta name="theme-color" content="{{ $site->seoThemeColor()->or('#060b16') }}" />
-<link rel="canonical" href="{{ $url }}" />
+@unless ($isError)
+    <link rel="canonical" href="{{ $url }}" />
+@endunless
 
 {{-- Open Graph --}}
 <meta property="og:type" content="{{ $page->ogType()->or('website') }}" />

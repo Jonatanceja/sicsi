@@ -1,0 +1,45 @@
+label: Enlaces de ayuda
+icon: url
+sections:
+  content:
+    type: fields
+    fields:
+      errorLinksTitle:
+        label: Título de la lista
+        type: text
+      errorLinks:
+        label: Enlaces
+        type: structure
+        columns:
+          label: true
+          url: true
+        fields:
+          icon:
+            extends: fields/icon
+            width: 1/3
+          label:
+            label: Título
+            type: text
+            width: 2/3
+          text:
+            label: Texto
+            type: text
+          url:
+            label: Enlace
+            type: text
+      errorContactIcon:
+        label: Contacto – icono
+        extends: fields/icon
+        width: 1/3
+      errorContactText:
+        label: Contacto – texto
+        type: text
+        width: 2/3
+      errorContactLabel:
+        label: Contacto – enlace visible
+        type: text
+        width: 1/2
+      errorContactUrl:
+        label: Contacto – URL (tel:, mailto:…)
+        type: text
+        width: 1/2

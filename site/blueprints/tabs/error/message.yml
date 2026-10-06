@@ -1,0 +1,46 @@
+label: Mensaje
+icon: alert
+sections:
+  content:
+    type: fields
+    fields:
+      errorIcon:
+        label: Icono
+        extends: fields/icon
+        width: 1/3
+      errorEyebrow:
+        label: Antetítulo
+        type: text
+        width: 2/3
+      errorCode:
+        label: Código grande
+        type: text
+        width: 1/3
+      errorTitle:
+        label: Título
+        type: text
+        width: 2/3
+      errorText:
+        label: Descripción
+        type: textarea
+        size: small
+      errorPrimaryLabel:
+        label: Botón principal – texto
+        type: text
+        width: 1/4
+      errorPrimaryIcon:
+        label: Botón principal – icono
+        extends: fields/icon
+        width: 1/4
+      errorPrimaryUrl:
+        label: Botón principal – enlace
+        type: text
+        width: 1/2
+      errorSecondaryLabel:
+        label: Botón secundario – texto
+        type: text
+        width: 1/2
+      errorSecondaryUrl:
+        label: Botón secundario – enlace
+        type: text
+        width: 1/2

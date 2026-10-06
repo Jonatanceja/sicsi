@@ -1,4 +1,89 @@
-Title: Error
+Title: Página no encontrada
+
+----
+
+Erroricon: exclamation-triangle
+
+----
+
+Erroreyebrow: Página no encontrada
+
+----
+
+Errorcode: 404
+
+----
+
+Errortitle: No encontramos lo que buscabas
+
+----
+
+Errortext: La dirección pudo haber cambiado o ya no está disponible. Te ayudamos a encontrar lo que necesitas para mantener tu operación en cumplimiento.
+
+----
+
+Errorprimarylabel: Volver al inicio
+
+----
+
+Errorprimaryicon: arrow-right
+
+----
+
+Errorprimaryurl: /
+
+----
+
+Errorsecondarylabel: Contactar asesor
+
+----
+
+Errorsecondaryurl: /contacto
+
+----
+
+Errorlinkstitle: Quizá te interese
+
+----
+
+Errorlinks:
+
+- 
+  icon: building-office
+  label: Inicio
+  text: Conoce SICSI y sus garantías
+  url: /
+- 
+  icon: user-group
+  label: Nosotros
+  text: Historia, misión y valores
+  url: /nosotros
+- 
+  icon: academic-cap
+  label: Servicios
+  text: Cursos NOM y DC-3
+  url: /servicios
+- 
+  icon: chat-bubble
+  label: Contacto
+  text: Cotiza tu capacitación
+  url: /contacto
+
+----
+
+Errorcontacticon: phone
+
+----
+
+Errorcontacttext: ¿Necesitas ayuda inmediata? Llámanos al
+
+----
+
+Errorcontactlabel: +52 (55) 5824-0912
+
+----
+
+Errorcontacturl: tel:+525558240912
 
 ----
 
