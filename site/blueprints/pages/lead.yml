@@ -1,0 +1,80 @@
+title: Solicitud
+
+options:
+  changeSlug: false
+  changeStatus: false
+  changeTemplate: false
+  duplicate: false
+
+columns:
+  main:
+    width: 2/3
+    fields:
+      name:
+        label: Nombre
+        type: text
+        disabled: true
+        width: 1/2
+      company:
+        label: Empresa
+        type: text
+        disabled: true
+        width: 1/2
+      email:
+        label: Correo
+        type: email
+        disabled: true
+        width: 1/2
+      phone:
+        label: Teléfono
+        type: text
+        disabled: true
+        width: 1/2
+      service:
+        label: Servicio de interés
+        type: text
+        disabled: true
+      location:
+        label: Ciudad / estado
+        type: text
+        disabled: true
+        width: 1/3
+      people:
+        label: Personas
+        type: text
+        disabled: true
+        width: 1/3
+      modality:
+        label: Modalidad
+        type: text
+        disabled: true
+        width: 1/3
+      comments:
+        label: Comentarios
+        type: textarea
+        disabled: true
+        size: small
+  sidebar:
+    width: 1/3
+    fields:
+      leadStatus:
+        label: Seguimiento
+        type: select
+        default: new
+        options:
+          new: Nueva
+          contacted: Contactada
+          quoted: Cotizada
+          closed: Cerrada
+      notes:
+        label: Notas internas
+        type: textarea
+        size: small
+      createdAt:
+        label: Recibida
+        type: text
+        disabled: true
+      source:
+        label: Página de origen
+        type: text
+        disabled: true

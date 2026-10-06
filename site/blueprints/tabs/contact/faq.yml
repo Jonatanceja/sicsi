@@ -1,0 +1,29 @@
+label: Preguntas frecuentes
+icon: question
+sections:
+  content:
+    type: fields
+    fields:
+      faqEyebrow:
+        label: Antetítulo
+        type: text
+      faqTitle:
+        label: Título
+        type: text
+      faqText:
+        label: Descripción
+        type: textarea
+        size: small
+      faqItems:
+        label: Preguntas
+        type: structure
+        columns:
+          question: true
+        fields:
+          question:
+            label: Pregunta
+            type: text
+          answer:
+            label: Respuesta
+            type: textarea
+            size: small

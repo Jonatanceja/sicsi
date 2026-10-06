@@ -1,6 +1,6 @@
 // extras: { fieldKey: 'Label sent in the email' } — each key maps to an input/select with id `q-<fieldKey>`
 export default ({ endpoint, success, error, extras = {} }) => ({
-  fields: { name: '', company: '', email: '', phone: '', ...Object.fromEntries(Object.keys(extras).map((key) => [key, ''])) },
+  fields: { name: '', company: '', email: '', phone: '', website: '', ...Object.fromEntries(Object.keys(extras).map((key) => [key, ''])) },
   errors: {},
   status: 'idle', // idle | sending | sent | failed
   message: '',
@@ -28,13 +28,13 @@ export default ({ endpoint, success, error, extras = {} }) => ({
 
     this.status = 'sending'
 
-    const { name, company, email, phone } = this.fields
+    const { name, company, email, phone, website } = this.fields
     const extra = Object.fromEntries(Object.entries(extras).map(([key, label]) => [label, this.fields[key]]))
 
     try {
       await window.axios.post(
         endpoint,
-        { name, company, email, phone, extra },
+        { name, company, email, phone, website, extra },
         { headers: { 'X-CSRF-Token': document.querySelector('meta[name="csrf-token"]')?.content } },
       )
       this.status = 'sent'

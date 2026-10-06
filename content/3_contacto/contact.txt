@@ -1,0 +1,277 @@
+Title: Contacto
+
+----
+
+Heroimage: 
+
+----
+
+Herobadge: Atención y asesoría técnica inmediata
+
+----
+
+Herotitlestart: Contáctanos y Asegura el
+
+----
+
+Herotitlehighlight: Cumplimiento Normativo
+
+----
+
+Herotitleend: de tu Empresa
+
+----
+
+Herotext: Estamos listos para atender tus requerimientos de capacitación STPS con entrega de constancias DC-3 el mismo día, gestión de Protección Civil y auditorías técnicas en toda la República Mexicana.
+
+----
+
+Herochips:
+
+- 
+  icon: clock
+  text: 'Respuesta garantizada en < 24 horas'
+- 
+  icon: shield-check
+  text: Instructores acreditados STPS
+- 
+  icon: globe
+  text: Cobertura en las 32 entidades
+
+----
+
+Channelsicon: phone
+
+----
+
+Channelstitle: Canales de Comunicación Inmediata
+
+----
+
+Channels:
+
+- 
+  icon: phone
+  label: Línea telefónica directa / conmutador
+  value: +52 (55) 5824-0912
+  url: tel:+525558240912
+  text: 'Horario: Lunes a Viernes 08:00 - 18:00 hrs'
+  highlighted: 'false'
+- 
+  icon: chat-bubble
+  label: WhatsApp directo a coordinación
+  value: +52 (55) 3412-8890
+  url: https://wa.me/525534128890
+  text: >
+    Respuesta inmediata para requerimientos
+    de contingencia e inspecciones STPS.
+  highlighted: 'true'
+- 
+  icon: envelope
+  label: 'Mesa de cotizaciones & licitaciones'
+  value: contacto@sicsi.com.mx
+  url: mailto:contacto@sicsi.com.mx
+  text: >
+    Emisión de cotizaciones corporativas
+    formales con validez fiscal.
+  highlighted: 'false'
+
+----
+
+Noteicon: shield-check
+
+----
+
+Notetag: Acreditación oficial STPS
+
+----
+
+Note: Agente Capacitador Externo con registro vigente ante la Secretaría del Trabajo y Previsión Social para emisión legal de constancias DC-3.
+
+----
+
+Officesicon: building-office
+
+----
+
+Officestitle: Nuestras Sedes & Cobertura Operativa
+
+----
+
+Offices:
+
+- 
+  icon: building-office
+  title: Corporativo Central CDMX
+  text: >
+    Insurgentes Sur 1602, Crédito
+    Constructor, Benito Juárez, C.P. 03940,
+    Ciudad de México, CDMX.
+- 
+  icon: cube
+  title: Patio Técnico de Maniobras Industriales
+  text: >
+    Torres de caída, cámaras para espacios
+    confinados y campo de fuego simulado.
+    Zona Industrial Cuautitlán Izcalli /
+    Tlalnepantla, Edo. Méx.
+- 
+  icon: globe
+  title: Equipos Móviles In-Situ Nacional
+  text: >
+    Instructores certificados con remolques
+    de equipo especializado para
+    capacitación directa en plantas, naves
+    y faenas en los 32 estados de la
+    República.
+
+----
+
+Urgenticon: exclamation-triangle
+
+----
+
+Urgenttitle: ¿Tienes una auditoría o inspección STPS inminente?
+
+----
+
+Urgenttext: Contamos con protocolo de respuesta prioritaria en menos de 12 horas para regularización de carpetas de capacitación, DC-3 rezagadas y planes de Protección Civil.
+
+----
+
+Faqeyebrow: Resolución de dudas frecuentes
+
+----
+
+Faqtitle: Preguntas Frecuentes de Cumplimiento & Contratación
+
+----
+
+Faqtext: Conoce cómo operamos, los tiempos de expedición de certificados oficiales y las condiciones para cotizaciones empresariales.
+
+----
+
+Faqitems:
+
+- 
+  question: >
+    ¿Cuánto tiempo tarda la emisión y
+    entrega de las constancias DC-3?
+  answer: >
+    Entregamos las constancias DC-3 el mismo
+    día de la capacitación, una vez
+    aprobada la evaluación de cada
+    participante. Incluimos formato digital
+    y físico, listas de asistencia y
+    expediente listo para inspección.
+- 
+  question: >
+    ¿Tienen cobertura para impartir cursos
+    directamente en nuestra planta?
+  answer: >
+    Sí. Contamos con instructores y equipo
+    móvil para capacitar in-situ en
+    plantas, naves y obras de las 32
+    entidades del país, además de sesiones
+    en línea interactivas para oficinas
+    corporativas.
+- 
+  question: >
+    ¿Qué validez legal tienen las
+    constancias y dictámenes emitidos?
+  answer: >
+    Somos Agente Capacitador Externo con
+    registro vigente ante la STPS, por lo
+    que las constancias DC-3 tienen plena
+    validez oficial en todo el territorio
+    nacional y son auditables ante
+    inspecciones federales.
+- 
+  question: >
+    ¿Cómo solicito una cotización formal
+    para licitaciones o compras
+    corporativas?
+  answer: >
+    Completa el formulario de esta página o
+    escríbenos por teléfono, WhatsApp o
+    correo. Un consultor técnico te
+    responderá en menos de 24 horas con una
+    propuesta formal con validez fiscal,
+    adaptada a tu planta y a los
+    requerimientos de tu licitación.
+
+----
+
+Ctaicon: exclamation-triangle
+
+----
+
+Ctatitle: ¿Tienes una visita de inspección de la STPS o Protección Civil programada?
+
+----
+
+Ctatext: Llama directamente a nuestra línea de atención prioritaria para auditorías y regularización urgente. Evita multas y apercibimientos administrativos con nuestro respaldo pericial inmediato.
+
+----
+
+Ctaprimarylabel: Llamar: +52 (55) 5824-0912
+
+----
+
+Ctaprimaryicon: phone
+
+----
+
+Ctaprimaryurl: tel:+525558240912
+
+----
+
+Ctasecondarylabel: WhatsApp de urgencias
+
+----
+
+Ctasecondaryicon: chat-bubble
+
+----
+
+Ctasecondaryurl: https://wa.me/525534128890
+
+----
+
+Seotitle: Contacto y Cotizaciones STPS | SICSI
+
+----
+
+Seodescription: Contáctanos para cotizar capacitación STPS, constancias DC-3 el mismo día, Protección Civil y auditorías técnicas. Respuesta en menos de 24 horas.
+
+----
+
+Seokeywords: 
+
+----
+
+Seorobots: 
+
+----
+
+Ogtitle: 
+
+----
+
+Ogtype: website
+
+----
+
+Ogdescription: 
+
+----
+
+Ogimage: 
+
+----
+
+Ogimagealt: 
+
+----
+
+Uuid: njwl6w5nucydot3c

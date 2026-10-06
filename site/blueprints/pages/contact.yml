@@ -1,0 +1,11 @@
+title: Contacto
+
+options:
+  changeTemplate: false
+
+tabs:
+  hero: tabs/contact/hero
+  channels: tabs/contact/channels
+  faq: tabs/contact/faq
+  cta: tabs/contact/cta
+  seo: tabs/seo

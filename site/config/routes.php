@@ -6,53 +6,114 @@ use Kirby\Toolkit\Str;
 use Kirby\Toolkit\V;
 
 return [
+    // Leads are private Panel content: never render them on the public site
+    [
+        'pattern' => ['solicitudes', 'solicitudes/(:all)'],
+        'action' => function () {
+            $kirby = App::instance();
+            $kirby->response()->code(404);
+
+            return $kirby->site()->errorPage();
+        },
+    ],
     [
         'pattern' => 'cotizar',
         'method' => 'POST',
         'action' => function () {
             $kirby = App::instance();
+            $site = $kirby->site();
             $data = $kirby->request()->data();
-            $home = $kirby->page('home');
 
             if (csrf($kirby->request()->header('X-CSRF-Token')) !== true) {
                 return Response::json(['message' => 'Sesión expirada, recarga la página.'], 419);
             }
 
-            $name = trim((string) ($data['name'] ?? ''));
-            $company = trim((string) ($data['company'] ?? ''));
-            $email = trim((string) ($data['email'] ?? ''));
-            $phone = trim((string) ($data['phone'] ?? ''));
-
-            if ($name === '' || $company === '' || V::email($email) === false || strlen(preg_replace('/\D/', '', $phone)) < 8) {
-                return Response::json(['message' => $home->formError()->value()], 422);
+            // Honeypot: pretend success so bots learn nothing
+            if (trim((string) ($data['website'] ?? '')) !== '') {
+                return Response::json(['ok' => true]);
             }
 
-            $lines = [
-                'Nombre: '.$name,
-                'Empresa: '.$company,
-                'Correo: '.$email,
-                'Teléfono: '.$phone,
-            ];
+            $clip = fn ($value, int $max) => Str::substr(trim(strip_tags((string) $value)), 0, $max);
+            $name = $clip($data['name'] ?? '', 120);
+            $company = $clip($data['company'] ?? '', 160);
+            $email = $clip($data['email'] ?? '', 160);
+            $phone = $clip($data['phone'] ?? '', 40);
 
+            if ($name === '' || $company === '' || V::email($email) === false || strlen(preg_replace('/\D/', '', $phone)) < 8) {
+                return Response::json(['message' => $site->formError()->value()], 422);
+            }
+
+            // Extra fields arrive as label => value; keep them for the email and by key for the lead
+            $extra = [];
             foreach ((array) ($data['extra'] ?? []) as $label => $value) {
                 if (is_scalar($value) && trim((string) $value) !== '') {
-                    $lines[] = Str::substr(strip_tags((string) $label), 0, 60).': '.Str::substr(trim((string) $value), 0, 2000);
+                    $extra[$clip($label, 60)] = $clip($value, 2000);
                 }
             }
 
-            $lines[] = 'Origen: '.$kirby->request()->header('Referer', $kirby->url());
+            $labels = [
+                'service' => $site->formServiceLabel()->value(),
+                'location' => $site->formLocationLabel()->value(),
+                'people' => $site->formPeopleLabel()->value(),
+                'modality' => $site->formModalityLabel()->value(),
+                'comments' => $site->formCommentsLabel()->value(),
+            ];
+            $byKey = [];
+            foreach ($labels as $key => $label) {
+                $byKey[$key] = $extra[trim(str_replace('*', '', $label))] ?? '';
+            }
+
+            $source = $clip($kirby->request()->header('Referer', ''), 255);
+
+            // 1) Save the lead in the Panel (works even if mail is not configured)
+            try {
+                $kirby->impersonate('kirby', function () use ($kirby, $name, $company, $email, $phone, $byKey, $source) {
+                    $parent = $kirby->page('solicitudes');
+                    $now = date('Y-m-d H:i:s');
+
+                    $parent->createChild([
+                        'slug' => 'solicitud-'.date('YmdHis').'-'.strtolower(Str::random(4, 'alphaNum')),
+                        'template' => 'lead',
+                        'draft' => false,
+                        'content' => [
+                            'title' => $company.' – '.$name,
+                            'name' => $name,
+                            'company' => $company,
+                            'email' => $email,
+                            'phone' => $phone,
+                            ...$byKey,
+                            'leadStatus' => 'new',
+                            'createdAt' => $now,
+                            'source' => $source,
+                        ],
+                    ]);
+                });
+            } catch (Throwable $e) {
+                return Response::json(['message' => $site->formError()->value()], 500);
+            }
+
+            // 2) Notify by email; a mail failure must not lose the lead
+            $lines = ['Nombre: '.$name, 'Empresa: '.$company, 'Correo: '.$email, 'Teléfono: '.$phone];
+            foreach ($extra as $label => $value) {
+                $lines[] = $label.': '.$value;
+            }
+            $lines[] = 'Origen: '.($source ?: $kirby->url());
 
             try {
-                $kirby->email([
-                    'from' => env('MAIL_FROM_ADDRESS', 'no-reply@'.$kirby->url('index', true)->host()),
-                    'fromName' => env('MAIL_FROM_NAME', $kirby->site()->title()->value()),
-                    'replyTo' => $email,
-                    'to' => $home->formRecipient()->or(env('MAIL_FROM_ADDRESS'))->value(),
-                    'subject' => 'Nueva solicitud de cotización – '.$company,
-                    'body' => implode("\n", $lines),
-                ]);
+                $to = $site->formRecipient()->or(env('MAIL_FROM_ADDRESS'))->value();
+
+                if ($to) {
+                    $kirby->email([
+                        'from' => env('MAIL_FROM_ADDRESS', $to),
+                        'fromName' => env('MAIL_FROM_NAME', $site->title()->value()),
+                        'replyTo' => $email,
+                        'to' => $to,
+                        'subject' => 'Nueva solicitud de cotización – '.$company,
+                        'body' => implode("\n", $lines),
+                    ]);
+                }
             } catch (Throwable $e) {
-                return Response::json(['message' => $home->formError()->value()], 500);
+                // Lead is already stored in the Panel
             }
 
             return Response::json(['ok' => true]);

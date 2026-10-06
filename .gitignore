@@ -47,3 +47,6 @@ yarn-error.log
 # Plugins
 # ---------------
 /site/plugins/kirby-*
+
+# Leads submitted through the website forms (private data)
+/content/solicitudes/*/

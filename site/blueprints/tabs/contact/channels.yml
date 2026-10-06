@@ -1,0 +1,92 @@
+label: Canales y sedes
+icon: chat
+sections:
+  content:
+    type: fields
+    fields:
+      channelsIcon:
+        label: Icono del título
+        extends: fields/icon
+        width: 1/3
+      channelsTitle:
+        label: Título de canales
+        type: text
+        width: 2/3
+      channels:
+        label: Canales de comunicación
+        type: structure
+        columns:
+          label: true
+          value: true
+        fields:
+          icon:
+            extends: fields/icon
+            width: 1/3
+          label:
+            label: Etiqueta
+            type: text
+            width: 2/3
+          value:
+            label: Valor visible
+            type: text
+            width: 1/2
+          url:
+            label: Enlace (tel:, mailto:, https://wa.me/…)
+            type: text
+            width: 1/2
+          text:
+            label: Texto de apoyo
+            type: text
+          highlighted:
+            label: Destacar (verde, canal prioritario)
+            type: toggle
+            text: Sí
+      noteIcon:
+        label: Acreditación – icono
+        extends: fields/icon
+        width: 1/3
+      noteTag:
+        label: Acreditación – etiqueta
+        type: text
+        width: 2/3
+      note:
+        label: Acreditación – texto
+        type: textarea
+        size: small
+      officesIcon:
+        label: Icono del título de sedes
+        extends: fields/icon
+        width: 1/3
+      officesTitle:
+        label: Título de sedes
+        type: text
+        width: 2/3
+      offices:
+        label: Sedes
+        type: structure
+        columns:
+          title: true
+        fields:
+          icon:
+            extends: fields/icon
+            width: 1/3
+          title:
+            label: Título
+            type: text
+            width: 2/3
+          text:
+            label: Texto
+            type: textarea
+            size: small
+      urgentIcon:
+        label: Aviso urgente – icono
+        extends: fields/icon
+        width: 1/3
+      urgentTitle:
+        label: Aviso urgente – título
+        type: text
+        width: 2/3
+      urgentText:
+        label: Aviso urgente – texto
+        type: textarea
+        size: small

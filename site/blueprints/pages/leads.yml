@@ -1,0 +1,21 @@
+title: Solicitudes
+
+options:
+  changeSlug: false
+  changeStatus: false
+  changeTemplate: false
+  changeTitle: false
+  delete: false
+  duplicate: false
+
+sections:
+  leads:
+    type: pages
+    headline: Solicitudes recibidas
+    status: all
+    sortBy: createdAt desc
+    text: "{{ page.company }} – {{ page.name }}"
+    info: "{{ page.createdAt }} · {{ page.service }}"
+    image: false
+    create: false
+    limit: 50

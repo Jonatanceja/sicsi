@@ -10,6 +10,11 @@ tabs:
       pages:
         headline: Pages
         type: pages
+        templates:
+          - home
+          - about
+          - services
+          - contact
 
   brand:
     label: Logotipo
@@ -218,6 +223,150 @@ tabs:
             uploads:
               template: image
             width: 1/3
+
+  form:
+    label: Formulario
+    icon: edit
+    sections:
+      content:
+        type: fields
+        fields:
+          formInfo:
+            type: info
+            theme: info
+            text: Este formulario se muestra en Home, Servicios y Contacto. Cada solicitud se guarda en la pestaña **Solicitudes** y se envía por correo.
+          formRecipient:
+            label: Correo que recibe las solicitudes
+            type: email
+            help: Si está vacío se usa MAIL_FROM_ADDRESS del .env.
+          formBadge:
+            label: Encabezado – insignia (opcional)
+            type: text
+            width: 1/3
+          formTitle:
+            label: Encabezado – título (opcional)
+            type: text
+            width: 2/3
+          formText:
+            label: Encabezado – descripción (opcional)
+            type: text
+          formFieldsHeadline:
+            label: Campos
+            type: headline
+          formNameLabel:
+            label: Nombre – etiqueta
+            type: text
+            width: 1/2
+          formNamePlaceholder:
+            label: Nombre – ejemplo
+            type: text
+            width: 1/2
+          formCompanyLabel:
+            label: Empresa – etiqueta
+            type: text
+            width: 1/2
+          formCompanyPlaceholder:
+            label: Empresa – ejemplo
+            type: text
+            width: 1/2
+          formEmailLabel:
+            label: Correo – etiqueta
+            type: text
+            width: 1/2
+          formEmailPlaceholder:
+            label: Correo – ejemplo
+            type: text
+            width: 1/2
+          formPhoneLabel:
+            label: Teléfono – etiqueta
+            type: text
+            width: 1/2
+          formPhonePlaceholder:
+            label: Teléfono – ejemplo
+            type: text
+            width: 1/2
+          formServiceLabel:
+            label: Servicio – etiqueta
+            type: text
+          formServiceOptions:
+            label: Servicio – opciones
+            type: structure
+            columns:
+              label: true
+            fields:
+              label:
+                label: Opción
+                type: text
+          formLocationLabel:
+            label: Ciudad / estado – etiqueta
+            type: text
+            width: 1/2
+          formLocationPlaceholder:
+            label: Ciudad / estado – ejemplo
+            type: text
+            width: 1/2
+          formPeopleLabel:
+            label: Personas – etiqueta
+            type: text
+          formPeopleOptions:
+            label: Personas – opciones
+            type: structure
+            columns:
+              label: true
+            fields:
+              label:
+                label: Opción
+                type: text
+          formModalityLabel:
+            label: Modalidad – etiqueta
+            type: text
+          formModalityOptions:
+            label: Modalidad – opciones
+            type: structure
+            columns:
+              label: true
+            fields:
+              label:
+                label: Opción
+                type: text
+          formCommentsLabel:
+            label: Comentarios – etiqueta
+            type: text
+            width: 1/2
+          formCommentsPlaceholder:
+            label: Comentarios – ejemplo
+            type: text
+            width: 1/2
+          formSubmitLabel:
+            label: Botón de envío
+            type: text
+            width: 1/2
+          formSubmitIcon:
+            label: Icono del botón
+            extends: fields/icon
+            width: 1/2
+          formSuccess:
+            label: Mensaje de éxito
+            type: text
+          formError:
+            label: Mensaje de error
+            type: text
+
+  leads:
+    label: Solicitudes
+    icon: email
+    sections:
+      leads:
+        type: pages
+        headline: Solicitudes recibidas
+        parent: site.find('solicitudes')
+        status: all
+        sortBy: createdAt desc
+        text: "{{ page.company }} – {{ page.name }}"
+        info: "{{ page.createdAt }} · {{ page.service }}"
+        image: false
+        create: false
+        limit: 30
 
   seo:
     label: SEO
