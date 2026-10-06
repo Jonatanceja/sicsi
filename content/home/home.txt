@@ -1,4 +1,606 @@
-Title: Home
+Title: Inicio
+
+----
+
+Heroimage: 
+
+----
+
+Herobadge: Agente capacitador externo acreditado STPS
+
+----
+
+Herobadgeicon: shield-check
+
+----
+
+Herotitlestart: Capacitación y Seguridad Industrial con
+
+----
+
+Herotitlehighlight: 100% de Validez STPS
+
+----
+
+Herotitleend: y Entrega el Mismo Día
+
+----
+
+Herotext: Cumplimiento normativo integral sin fricciones administrativas. Entregamos constancias oficiales DC-3 el mismo día de la capacitación para operaciones industriales y corporativas con cobertura en todo México.
+
+----
+
+Heroprimarylabel: Cotizar capacitación
+
+----
+
+Heroprimaryurl: #cotizar
+
+----
+
+Herosecondarylabel: Ver cursos & NOMs
+
+----
+
+Herosecondaryurl: #servicios
+
+----
+
+Herohighlights:
+
+- 
+  icon: flag
+  title: Fundada en México
+  text: Desde 2015
+- 
+  icon: check-circle
+  title: '100% Validez STPS'
+  text: Registro oficial
+- 
+  icon: bolt
+  title: Mismo día
+  text: Emisión de DC-3
+- 
+  icon: globe
+  title: 'Presencial & Online'
+  text: Todo México
+
+----
+
+Guaranteebadge: Auditable & 100% oficial
+
+----
+
+Guaranteebadgeicon: check-circle
+
+----
+
+Guaranteetitle: Garantía de Cumplimiento Legal ante STPS y Protección Civil
+
+----
+
+Guaranteetext: Respaldamos cada capacitación con expedientes técnicos normalizados, listos para solventar inspecciones federales del trabajo y auditorías de Protección Civil sin riesgo de sanciones.
+
+----
+
+Guaranteeregistryicon: check-circle
+
+----
+
+Guaranteeregistry: Registro vigente de Agente Capacitador
+
+----
+
+Guaranteestats:
+
+- 
+  icon: building-office
+  value: "+500"
+  label: Empresas certificadas
+  text: >
+    Corporativos y complejos industriales en
+    la república.
+- 
+  icon: document-text
+  value: +15,000
+  label: Formatos DC-3 emitidos
+  text: >
+    Constancias de habilidades laborales
+    registradas ante la STPS.
+- 
+  icon: check-circle
+  value: '100%'
+  label: Aprobación legal
+  text: >
+    Expedientes auditables y validados en
+    revisiones oficiales.
+- 
+  icon: clock
+  value: 0 Días
+  label: Tiempo de espera
+  text: >
+    Evaluación aprobada, emisión digital y
+    registro el mismo día.
+
+----
+
+Guaranteechecks:
+
+- 
+  icon: check-circle
+  title: Validez jurídica plena
+  text: >
+    Reconocimiento formal en las 32
+    entidades del país.
+- 
+  icon: document-text
+  title: Expediente de inspección listo
+  text: >
+    Listas de asistencia y cartas
+    descriptivas firmadas.
+- 
+  icon: qr-code
+  title: Verificación inmediata QR
+  text: >
+    Validación electrónica de constancias
+    en tiempo real.
+
+----
+
+Allyimage: 
+
+----
+
+Allyimagetag: Experiencia de campo
+
+----
+
+Allycardicon: shield-check
+
+----
+
+Allycardtitle: Blindaje Legal Operativo
+
+----
+
+Allycardtext: Respaldo total ante la inspección de la STPS y Protección Civil.
+
+----
+
+Allyeyebrow: Alianza institucional
+
+----
+
+Allytitle: Tu Aliado Estratégico en Seguridad Industrial
+
+----
+
+Allytext: En SICSI salvaguardamos el capital humano de tu empresa y garantizamos absoluta tranquilidad legal frente a inspecciones de la STPS mediante programas de capacitación técnica de alto rigor, auditorías preventivas y consultoría de cumplimiento.
+
+----
+
+Allyitems:
+
+- 
+  icon: clock
+  title: Agilidad operativa
+  text: >
+    Capacitaciones flexibles programadas
+    según los turnos de tu planta
+    industrial.
+- 
+  icon: check-circle
+  title: Cero rezago
+  text: >
+    Formatos DC-3 generados y validados
+    digitalmente al concluir el curso.
+- 
+  icon: scale
+  title: Asesoría legal
+  text: >
+    Acompañamiento técnico ante
+    requerimientos y visitas de la autoridad
+    laboral.
+
+----
+
+Diffeyebrow: Diferenciadores clave
+
+----
+
+Difftitle: Por Qué Las Principales Plantas Eligen SICSI
+
+----
+
+Difftext: Diseñado para líderes de Recursos Humanos, Seguridad e Higiene (EHS) y Directores de Operaciones.
+
+----
+
+Diffcards:
+
+- 
+  icon: bolt
+  tag: Inmediata absoluta
+  title: DC-3 el Mismo Día
+  text: >
+    Entrega inmediata de constancias
+    oficiales de competencias o habilidades
+    laborales (Formato DC-3) al concluir la
+    sesión evaluativa, eliminando tiempos
+    muertos y riesgos normativos
+    específicos por puesto de trabajo.
+  footericon: check-circle
+  footerlabel: Validación QR digital
+- 
+  icon: academic-cap
+  tag: Experiencia probada
+  title: Instructores Especialistas
+  text: >
+    Consultores e instructores debidamente
+    acreditados ante la STPS con más de una
+    década de experiencia en campo, plantas
+    de manufactura, industria química y
+    proyectos constructivos de alto riesgo.
+  footericon: check-circle
+  footerlabel: Registro vigente STPS
+- 
+  icon: globe
+  tag: '80% práctica / 20% teoría'
+  title: 'Metodología & Cobertura'
+  text: >
+    Entrenamiento dinámico enfocado en el
+    uso real de equipo y respuesta a
+    emergencias. Impartido in-situ en tus
+    instalaciones a nivel nacional o
+    mediante sesiones interactivas
+    síncronas para oficinas corporativas.
+  footericon: check-circle
+  footerlabel: 32 entidades federativas
+
+----
+
+Methodeyebrow: Rigor & trazabilidad
+
+----
+
+Methodtitle: Nuestra Metodología de Implementación
+
+----
+
+Methodtext: Un proceso estructurado de 5 fases diseñado para garantizar el aprendizaje real y el cumplimiento normativo estricto sin interrumpir tus cadenas de producción.
+
+----
+
+Methodsteps:
+
+- 
+  icon: clipboard-check
+  title: Diagnóstico Inicial y DNC
+  text: >
+    Detección puntual de necesidades de
+    capacitación (DNC) y mapeo de riesgos
+    normativos específicos por puesto de
+    trabajo.
+  phase: Fase 1 · Auditoría
+- 
+  icon: pencil-square
+  title: Diseño a la Medida
+  text: >
+    Adaptación del temario técnico, NOM
+    aplicables y dinámicas prácticas al
+    entorno y maquinaria de tu planta.
+  phase: Fase 2 · Personalización
+- 
+  icon: cube
+  title: Ejecución Práctica
+  text: >
+    Capacitación in-situ o remota enfocada
+    en prevención de siniestros, uso
+    correcto de EPP y protocolos de rescate.
+  phase: Fase 3 · Práctica 80/20
+- 
+  icon: eye
+  title: Evaluación
+  text: >
+    Pruebas teóricas y demostraciones de
+    destreza en vivo para certificar la
+    retención y aplicación de estándares
+    de seguridad.
+  phase: Fase 4 · Examen en sitio
+- 
+  icon: check-circle
+  title: 'Cierre & Entrega DC-3'
+  text: >
+    Emisión legal de constancias oficiales
+    DC-3, listas de asistencia STPS y
+    reporte ejecutivo de cumplimiento al
+    mismo día.
+  phase: Fase 5 · Entrega inmediata
+
+----
+
+Normseyebrow: Catálogo oficial STPS
+
+----
+
+Normseyebrowicon: document-text
+
+----
+
+Normstitle: Normas STPS de Mayor Demanda
+
+----
+
+Normstext: Cursos estructurados para responder de inmediato a las auditorías federales con valor curricular y constancia DC-3 individual.
+
+----
+
+Normslinklabel: Ver catálogo completo de +35 normas
+
+----
+
+Normslinkurl: #cotizar
+
+----
+
+Normshoursicon: clock
+
+----
+
+Normsprooficon: check-circle
+
+----
+
+Normscards:
+
+- 
+  code: NOM-009-STPS-2011
+  icon: arrow-up-right
+  title: Trabajos en Alturas
+  text: >
+    Uso y revisión de arneses, líneas de
+    vida, andamios, plataformas elevadoras y
+    protocolos de rescate seguro y vertical.
+  hours: 8 hrs teórico-prácticas
+  proof: Constancia DC-3
+- 
+  code: NOM-033-STPS-2015
+  icon: exclamation-triangle
+  title: Espacios Confinados
+  text: >
+    Monitoreo y muestreo de atmósferas
+    peligrosas, ventilación mecánica,
+    permisos de trabajo en caliente y plan
+    de extracción de emergencia.
+  hours: 8 hrs prácticas
+  proof: Constancia DC-3
+- 
+  code: NOM-027-STPS-2008
+  icon: bolt
+  title: Soldadura y Corte
+  text: >
+    Prevención de conflagraciones,
+    almacenamiento y manejo de cilindros de
+    gas, uso de bombeos y equipo de
+    protección visual.
+  hours: 8 hrs teórico-prácticas
+  proof: Constancia DC-3
+- 
+  code: NOM-006-STPS-2014
+  icon: cube
+  title: 'Montacargas & Maquinaria'
+  text: >
+    Operación segura de montacargas hombre
+    sentado y parado, inspección
+    pre-operacional, triángulo de
+    estabilidad y carga.
+  hours: 12 hrs con evaluación práctica
+  proof: DC-3
+- 
+  code: NOM-004-STPS-1999
+  icon: shield-check
+  title: Bloqueo y Etiquetado (LOTO)
+  text: >
+    Sistemas de protección y dispositivos
+    de seguridad en maquinaria, bloqueo de
+    fuentes de energía residual
+    (eléctrica, hidráulica, neumática).
+  hours: 6 hrs prácticas
+  proof: Constancia DC-3
+- 
+  code: NOM-018-STPS-2015
+  icon: beaker
+  title: Sustancias Químicas SGA
+  text: >
+    Sistema Globalmente Armonizado para la
+    identificación y comunicación de
+    peligros por sustancias químicas
+    peligrosas y Hojas de Datos (HDS).
+  hours: 6 hrs teóricas
+  proof: Constancia DC-3
+
+----
+
+Quoteeyebrow: Respuesta en menos de 24 horas
+
+----
+
+Quotetitle: Evita Sanciones y Protege a tu Equipo de Trabajo Hoy Mismo
+
+----
+
+Quotetext: Nuestros consultores diseñan un plan de cumplimiento normativo adaptado a la dimensión de tu empresa y requerimientos de tu planta sin demoras burocráticas.
+
+----
+
+Quotecontacts:
+
+- 
+  icon: phone
+  label: Línea directa nacional
+  value: +52 (55) 5824-0912
+  url: tel:+525558240912
+- 
+  icon: chat-bubble
+  label: Atención inmediata por WhatsApp
+  value: +52 (55) 3412-8890
+  url: https://wa.me/525534128890
+
+----
+
+Quotenoteicon: shield-check
+
+----
+
+Quotenote: Acreditación STPS autorizada: Registro de Agente Capacitador Externo vigente.
+
+----
+
+Formtitle: Solicitar Cotización Inmediata
+
+----
+
+Formbadge: STPS DC-3
+
+----
+
+Formtext: Completa los datos de tu empresa para emitir una propuesta formal.
+
+----
+
+Formrecipient: 
+
+----
+
+Formnamelabel: Nombre completo *
+
+----
+
+Formnameplaceholder: Ing. Carlos Mendoza
+
+----
+
+Formcompanylabel: Empresa o razón social *
+
+----
+
+Formcompanyplaceholder: Industrias Manufactureras del Centro
+
+----
+
+Formemaillabel: Correo corporativo *
+
+----
+
+Formemailplaceholder: carlos.mendoza@empresa.com.mx
+
+----
+
+Formphonelabel: Teléfono / celular *
+
+----
+
+Formphoneplaceholder: (55) 1234-5678
+
+----
+
+Formcourselabel: Cursos de interés / requerimiento
+
+----
+
+Formcourseoptions:
+
+- 
+  label: NOM-009-STPS (Trabajos en Alturas)
+- 
+  label: NOM-033-STPS (Espacios Confinados)
+- 
+  label: NOM-027-STPS (Soldadura y Corte)
+- 
+  label: NOM-006-STPS (Montacargas y Maquinaria)
+- 
+  label: NOM-004-STPS (Bloqueo y Etiquetado)
+- 
+  label: NOM-018-STPS (Sustancias Químicas SGA)
+- 
+  label: Otro / Paquete personalizado
+
+----
+
+Formpeoplelabel: Número aproximado de personas
+
+----
+
+Formpeopleplaceholder: Ej. 15 participantes
+
+----
+
+Formmodalitylabel: Modalidad deseada
+
+----
+
+Formmodalityoptions:
+
+- 
+  label: >
+    Presencial (in-situ en nuestras
+    instalaciones)
+- 
+  label: En línea (sesiones interactivas)
+- 
+  label: Mixta
+
+----
+
+Formsubmitlabel: Solicitar cotización inmediata
+
+----
+
+Formsubmiticon: arrow-right
+
+----
+
+Formsuccess: ¡Gracias! Recibimos tu solicitud y te contactaremos en menos de 24 horas.
+
+----
+
+Formerror: No pudimos enviar tu solicitud. Revisa los datos e inténtalo de nuevo.
+
+----
+
+Seotitle: Capacitación y Seguridad Industrial con validez STPS | SICSI
+
+----
+
+Seodescription: Agente capacitador externo acreditado STPS. Constancias DC-3 el mismo día, cursos NOM y cobertura nacional para plantas industriales y corporativos.
+
+----
+
+Seokeywords: capacitación STPS, DC-3, seguridad industrial, NOM, agente capacitador, protección civil
+
+----
+
+Seorobots: 
+
+----
+
+Ogtitle: SICSI | Capacitación y Seguridad Industrial con 100% de validez STPS
+
+----
+
+Ogtype: website
+
+----
+
+Ogdescription: Constancias oficiales DC-3 el mismo día, cursos NOM y cobertura en todo México.
+
+----
+
+Ogimage: 
+
+----
+
+Ogimagealt: 
 
 ----
 

@@ -1,0 +1,39 @@
+label: Objetivos
+icon: target
+sections:
+  content:
+    type: fields
+    fields:
+      goalsEyebrow:
+        label: Antetítulo
+        type: text
+      goalsTitle:
+        label: Título
+        type: text
+      goalsText:
+        label: Descripción
+        type: text
+      goals:
+        label: Objetivos
+        type: structure
+        columns:
+          value: true
+          title: true
+        fields:
+          value:
+            label: Cifra
+            type: text
+            width: 1/3
+          icon:
+            extends: fields/icon
+            width: 1/3
+          title:
+            label: Título
+            type: text
+          text:
+            label: Texto
+            type: textarea
+            size: small
+          tags:
+            label: Etiquetas
+            type: tags

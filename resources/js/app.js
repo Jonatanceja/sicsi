@@ -1,15 +1,13 @@
-import './bootstrap';
+import './bootstrap'
 
-// Uncomment if you need Alpine.js
-// import Alpine from 'alpinejs'
-// import example from './components/AlpineExample'
-// Alpine.data('example', example)
-// window.Alpine = Alpine
-// Alpine.start()
+import Alpine from 'alpinejs'
+import siteHeader from './components/siteHeader'
+import quoteForm from './components/quoteForm'
+import reveal from './components/reveal'
 
-// Uncomment if you need Vue
-// window.Vue = require('vue');
-// Vue.component('example', require('./components/Example.vue').default);
-// new Vue({
-//     el: '#app'
-// });
+Alpine.data('siteHeader', siteHeader)
+Alpine.data('quoteForm', quoteForm)
+Alpine.directive('reveal', reveal)
+
+window.Alpine = Alpine
+Alpine.start()

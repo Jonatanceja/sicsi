@@ -6,7 +6,11 @@
      */
 @endphp
 <x-layout>
-    <div class="flex h-screen w-screen items-center justify-center">
-        <img class="w-1/3 max-w-[250px]" src="{{ url('/images/beeb.png') }}" alt="Beeb" />
-    </div>
+    <x-home.hero :page="$page" />
+    <x-home.guarantee :page="$page" />
+    <x-home.ally :page="$page" />
+    <x-home.differentiators :page="$page" />
+    <x-home.method :page="$page" />
+    <x-home.norms :page="$page" />
+    <x-home.quote :page="$page" />
 </x-layout>

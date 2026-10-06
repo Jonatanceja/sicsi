@@ -1,0 +1,13 @@
+title: Servicios
+
+options:
+  changeTemplate: false
+
+tabs:
+  hero: tabs/services/hero
+  process: tabs/services/process
+  training: tabs/services/training
+  brigades: tabs/services/brigades
+  consulting: tabs/services/consulting
+  quote: tabs/services/quote
+  seo: tabs/seo

@@ -1,0 +1,16 @@
+title: Home
+
+options:
+  changeSlug: false
+  changeTemplate: false
+  delete: false
+
+tabs:
+  hero: tabs/home/hero
+  guarantee: tabs/home/guarantee
+  ally: tabs/home/ally
+  differentiators: tabs/home/differentiators
+  method: tabs/home/method
+  norms: tabs/home/norms
+  quote: tabs/home/quote
+  seo: tabs/seo

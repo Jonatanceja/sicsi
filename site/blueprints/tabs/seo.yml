@@ -1,0 +1,69 @@
+label: SEO
+icon: search
+sections:
+  content:
+    type: fields
+    fields:
+      seoHeadline:
+        label: Buscadores
+        type: headline
+      seoTitle:
+        label: Título SEO
+        type: text
+        maxlength: 60
+        counter: true
+        help: Si está vacío se usa el título de la página y el nombre del sitio.
+      seoDescription:
+        label: Meta descripción
+        type: textarea
+        size: small
+        maxlength: 160
+        counter: true
+        help: Si está vacía se usa la descripción por defecto del sitio.
+      seoKeywords:
+        label: Palabras clave
+        type: tags
+        width: 2/3
+      seoRobots:
+        label: Indexación
+        type: select
+        placeholder: Heredar del sitio
+        options:
+          index,follow: Permitir indexar (index, follow)
+          noindex,nofollow: Bloquear (noindex, nofollow)
+        width: 1/3
+      ogHeadline:
+        label: Open Graph (Facebook, LinkedIn, WhatsApp…)
+        type: headline
+      ogTitle:
+        label: og:title
+        type: text
+        help: Si está vacío se usa el título SEO.
+        width: 1/2
+      ogType:
+        label: og:type
+        type: select
+        default: website
+        options:
+          website: website
+          article: article
+          business.business: business
+        width: 1/2
+      ogDescription:
+        label: og:description
+        type: textarea
+        size: small
+        maxlength: 200
+        counter: true
+        help: Si está vacía se usa la meta descripción.
+      ogImage:
+        label: og:image
+        type: files
+        query: page.images
+        multiple: false
+        uploads:
+          template: image
+        help: 1200 × 630 px (JPG o PNG). Si está vacía se usa la imagen por defecto del sitio.
+      ogImageAlt:
+        label: Texto alternativo de la imagen (og:image:alt)
+        type: text

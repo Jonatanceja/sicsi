@@ -1,0 +1,374 @@
+Title: Nosotros
+
+----
+
+Heroimage: 
+
+----
+
+Herobadgeicon: star
+
+----
+
+Herobadge: Conoce a SICSI • Desde 2019
+
+----
+
+Herotitle: Salvaguardamos el Capital Humano y Aseguramos la Tranquilidad Legal de tu Empresa.
+
+----
+
+Herotext: Conoce la historia, el equipo y la visión detrás de SICSI.
+
+----
+
+Herochips:
+
+- 
+  icon: globe
+  text: '100% Cobertura Nacional'
+- 
+  icon: check-circle
+  text: Instructores STPS DC-3
+- 
+  icon: building-office
+  text: Sede Corporativa México
+
+----
+
+Heroprimarylabel: Conoce nuestros pilares
+
+----
+
+Heroprimaryicon: chevron-down
+
+----
+
+Heroprimaryurl: #ejes
+
+----
+
+Herosecondarylabel: Contactar asesor
+
+----
+
+Herosecondaryicon: chat-bubble
+
+----
+
+Herosecondaryurl: /#cotizar
+
+----
+
+Storyeyebrow: Nuestra historia y trayectoria
+
+----
+
+Storytitle: Quiénes Somos
+
+----
+
+Storytext:
+
+SICSI – Soluciones Integrales en Capacitación y Seguridad Industrial nació en México en 2019 como una firma especializada dedicada a brindar apoyo técnico y estratégico a empresas que buscan elevados estándares de seguridad.
+
+Nos consolidamos como un aliado estratégico integral ofreciendo tres ejes fundamentales de actuación: Formación Corporativa, Prevención de Riesgos y Consultoría STPS / Protección Civil. Gracias a nuestro padrón de instructores expertos, metodología interactiva y amplia cobertura en todo el territorio mexicano, transformamos la cultura de seguridad de las organizaciones como un activo de competitividad y protección legal permanente.
+
+----
+
+Storystats:
+
+- 
+  value: "2019"
+  label: Año de fundación
+  tone: brand
+- 
+  value: "+500"
+  label: Empresas blindadas
+  tone: dark
+- 
+  value: "32"
+  label: Entidades federativas
+  tone: dark
+- 
+  value: '100%'
+  label: Validez STPS
+  tone: green
+
+----
+
+Storyimage: 
+
+----
+
+Storycardicon: shield-check
+
+----
+
+Storycardtitle: Agente Capacitador Externo
+
+----
+
+Storycardstatus: Activo
+
+----
+
+Storycardtext: Registro oficial vigente STPS
+
+----
+
+Pillarstitle: Nuestros 3 Ejes Fundamentales de Actuación
+
+----
+
+Pillars:
+
+- 
+  icon: academic-cap
+  tag: Eje 01
+  title: Formación Corporativa
+  text: >
+    Cursos y programas técnicos con
+    registro y emisión de validez oficial
+    formato DC-3 inmediata para brigadas y
+    cuadrillas operativas.
+  footericon: check-circle
+  footerlabel: Constancias DC-3 certificadas
+- 
+  icon: shield-check
+  tag: Eje 02
+  title: Prevención de Riesgos
+  text: >
+    Evaluación diagnóstica integral,
+    análisis de vulnerabilidad en planta y
+    protocolos de mitigación de accidentes
+    de alto impacto.
+  footericon: eye
+  footerlabel: Diagnósticos in-situ
+- 
+  icon: scale
+  tag: Eje 03
+  title: Consultoría STPS / Protección Civil
+  text: >
+    Elaboración y dictamen de PIPC,
+    acompañamiento legal en auditorías e
+    inspecciones gubernamentales con cero
+    margen de sanción.
+  footericon: shield-check
+  footerlabel: Protección y blindaje legal
+
+----
+
+Missioneyebrow: Propósito y rumbo
+
+----
+
+Missiontitle: Misión y Visión
+
+----
+
+Missiontext: Principios rectores que conducen cada servicio, curso y auditoría ejecutada por el equipo técnico de SICSI.
+
+----
+
+Missioncards:
+
+- 
+  icon: shield-check
+  tag: Fundacional
+  title: Nuestra Misión
+  text: >
+    Salvaguardar el capital humano y
+    asegurar la tranquilidad legal de
+    nuestros clientes a través de la
+    excelencia en capacitación y la
+    prevención efectiva de riesgos
+    laborales.
+  footericon: heart
+  footerlabel: >
+    Compromiso con la vida y la integridad
+    de cada trabajador
+- 
+  icon: compass
+  tag: Proyección 2030
+  title: Nuestra Visión
+  text: >
+    Ser la empresa líder a nivel nacional
+    en Seguridad, Salud Ocupacional y
+    Capacitación, reconocida como una
+    referencia técnica y por generar un
+    impacto positivo y duradero en la
+    cultura preventiva de las empresas
+    mexicanas.
+  footericon: light-bulb
+  footerlabel: >
+    Liderazgo técnico e innovación en
+    metodología preventiva
+
+----
+
+Goalseyebrow: Metas de alto rendimiento
+
+----
+
+Goalstitle: Objetivos Estratégicos
+
+----
+
+Goalstext: Metas clave que guían nuestra operación diaria y compromiso con la industria.
+
+----
+
+Goals:
+
+- 
+  value: '100%'
+  icon: check-circle
+  title: 'Cumplimiento Legal 100%'
+  text: 'Garantizar que cada uno de nuestros clientes cumpla en un 100% con los requerimientos normativos vigentes ante la STPS, Protección Civil y autoridades pertinentes.'
+  tags: >
+    Auditorías aprobadas, Cero multas,
+    Expedientes técnicos
+- 
+  value: '+95%'
+  icon: target
+  title: Aprendizaje Práctico y Excelencia
+  text: 'Lograr más del 95% de aplicabilidad práctica e integración de conocimientos en el puesto de trabajo, asegurando un dominio técnico superior por parte de los trabajadores.'
+  tags: '80% práctica / 20% teoría, Simulaciones reales, Dominio técnico'
+- 
+  value: 360°
+  icon: arrow-path
+  title: Referencia y Cultura Preventiva
+  text: >
+    Fomentar una cultura organizacional de
+    prevención mediante auditorías
+    constantes, actualización normativa e
+    innovación pedagógica.
+  tags: >
+    Mejora continua, Innovación
+    pedagógica, Cultura proactiva
+
+----
+
+Valueseyebrow: Nuestros cimientos
+
+----
+
+Valuestitle: Valores Corporativos y Principios Éticos
+
+----
+
+Valuestext: Pautas institucionales innegociables aplicadas en cada análisis de riesgo y certificación entregada.
+
+----
+
+Values:
+
+- 
+  icon: scale
+  title: Integridad Normativa
+  text: >
+    Apego técnico irrestricto al marco
+    legal de la STPS y directrices de
+    Protección Civil, asegurando documentos
+    libres de contingencias.
+- 
+  icon: academic-cap
+  title: Excelencia Técnica
+  text: >
+    Instructores con certificaciones
+    industriales comprobables y experiencia
+    real en plantas químicas, de
+    manufactura y construcción.
+- 
+  icon: user-group
+  title: Compromiso Humano
+  text: >
+    Nuestra razón de ser es la
+    preservación de la vida, salud e
+    integridad de los colaboradores de
+    nuestros clientes.
+- 
+  icon: bolt
+  title: Respuesta Inmediata
+  text: >
+    Capacidad ágil para atender
+    requerimientos urgentes de inspección,
+    capacitaciones calendarizadas y
+    dictámenes técnicos.
+
+----
+
+Ctaeyebrowicon: shield-check
+
+----
+
+Ctaeyebrow: Asesoría especializada
+
+----
+
+Ctatitle: ¿Listo para elevar los estándares de seguridad de tu empresa?
+
+----
+
+Ctatext: Platica con nuestros consultores expertos y asegura el cumplimiento total de tu planta u oficina.
+
+----
+
+Ctaprimarylabel: Solicitar asesoría institucional
+
+----
+
+Ctaprimaryicon: arrow-right
+
+----
+
+Ctaprimaryurl: /#cotizar
+
+----
+
+Ctasecondarylabel: Ver catálogo de servicios
+
+----
+
+Ctasecondaryurl: /#servicios
+
+----
+
+Seotitle: Nosotros | Capacitación y Seguridad Industrial SICSI
+
+----
+
+Seodescription: Conoce la historia, misión, visión y valores de SICSI, agente capacitador externo acreditado STPS con cobertura nacional desde 2019.
+
+----
+
+Seokeywords: 
+
+----
+
+Seorobots: 
+
+----
+
+Ogtitle: 
+
+----
+
+Ogtype: website
+
+----
+
+Ogdescription: 
+
+----
+
+Ogimage: 
+
+----
+
+Ogimagealt: 
+
+----
+
+Uuid: qugntjjr4l8sulxp

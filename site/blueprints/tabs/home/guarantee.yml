@@ -1,0 +1,68 @@
+label: Garantía
+icon: shield
+sections:
+  content:
+    type: fields
+    fields:
+      guaranteeBadge:
+        label: Insignia
+        type: text
+        width: 1/2
+      guaranteeBadgeIcon:
+        label: Icono de la insignia
+        extends: fields/icon
+        width: 1/2
+      guaranteeTitle:
+        label: Título
+        type: text
+      guaranteeText:
+        label: Descripción
+        type: textarea
+        size: small
+      guaranteeRegistryIcon:
+        label: Icono del registro
+        extends: fields/icon
+        width: 1/3
+      guaranteeRegistry:
+        label: Texto del registro
+        type: text
+        width: 2/3
+      guaranteeStats:
+        label: Cifras
+        type: structure
+        columns:
+          value: true
+          label: true
+        fields:
+          icon:
+            extends: fields/icon
+            width: 1/4
+          value:
+            label: Valor
+            type: text
+            width: 1/4
+          label:
+            label: Etiqueta
+            type: text
+            width: 1/2
+          text:
+            label: Descripción
+            type: textarea
+            size: small
+      guaranteeChecks:
+        label: Verificaciones
+        type: structure
+        columns:
+          title: true
+          text: true
+        fields:
+          icon:
+            extends: fields/icon
+            width: 1/3
+          title:
+            label: Título
+            type: text
+            width: 2/3
+          text:
+            label: Texto
+            type: text

@@ -1,1 +1,223 @@
-Title: Site Title
+Title: SICSI
+
+----
+
+Brandlogo: - file://je6jtoteioudl71l
+
+----
+
+Brandfavicon: - file://nsnbqzaiar06nrr4
+
+----
+
+Brandname: SICSI
+
+----
+
+Brandtagline: Soluciones Integrales en Capacitación y Seguridad Industrial
+
+----
+
+Topbarphoneicon: phone
+
+----
+
+Topbarphone: +52 (55) 5824-0912
+
+----
+
+Topbaremailicon: envelope
+
+----
+
+Topbaremail: contacto@sicsi.com.mx
+
+----
+
+Topbartagicon: shield-check
+
+----
+
+Topbartag: Agente capacitador externo STPS
+
+----
+
+Topbarcoverageicon: globe
+
+----
+
+Topbarcoverage: Cobertura Nacional
+
+----
+
+Navitems:
+
+- 
+  label: Inicio
+  url: /
+- 
+  label: Nosotros
+  url: /nosotros
+- 
+  label: Servicios
+  url: /servicios
+
+----
+
+Navctalabel: Cotizar capacitación
+
+----
+
+Navctaurl: /#cotizar
+
+----
+
+Navctaicon: arrow-right
+
+----
+
+Footerdescription: Soluciones integrales en capacitación y seguridad industrial. Respaldamos a plantas industriales, corporativos y constructoras en el cumplimiento de normativas laborales y de protección civil.
+
+----
+
+Footerbadgeicon: shield-check
+
+----
+
+Footerbadge: STPS DC-3 Acreditado
+
+----
+
+Footerservicestitle: Servicios Especializados
+
+----
+
+Footerservices:
+
+- 
+  label: Capacitación y Cursos NOM (DC-3)
+  url: /servicios
+- 
+  label: Formación de Brigadas Industriales
+  url: /servicios
+- 
+  label: Programas Internos de Protección Civil
+  url: /servicios
+- 
+  label: Auditorías de Seguridad e Higiene
+  url: /servicios
+- 
+  label: Estudios de Riesgo y Vulnerabilidad
+  url: /servicios
+
+----
+
+Footerregulationtitle: Marco Regulatorio
+
+----
+
+Footerregulation:
+
+- 
+  code: NOM-002-STPS
+  text: >
+    Prevención y Protección contra
+    Incendios
+- 
+  code: NOM-009-STPS
+  text: Trabajos en Altura
+- 
+  code: NOM-033-STPS
+  text: Espacios Confinados
+- 
+  code: Protección Civil
+  text: Dictámenes y Registro Estatal
+- 
+  code: Certificados DC-3
+  text: Validez Oficial Nacional
+
+----
+
+Footercontacttitle: Contacto & Cobertura
+
+----
+
+Footercontacttext: Atención a nivel nacional con redes operativas en zonas metropolitanas e industriales del país.
+
+----
+
+Footerphone: +52 (55) 5824-0912
+
+----
+
+Footeremail: contacto@sicsi.com.mx
+
+----
+
+Footerhours: Lunes a Viernes: 08:00 – 18:00 hrs
+
+----
+
+Footercopyright: © SICSI 2024. Todos los derechos reservados. Soluciones Integrales en Capacitación y Seguridad Industrial.
+
+----
+
+Footerlinks:
+
+- 
+  label: Aviso de Privacidad
+  url: '#'
+- 
+  label: Términos y Condiciones
+  url: '#'
+- 
+  label: Registro STPS
+  url: '#'
+
+----
+
+Footercredittext: Diseño y Desarrollo por Webxpress
+
+----
+
+Footercrediturl: https://webxpress.website
+
+----
+
+Footercreditlogo: - file://umr2hyy4g3wy2ry0
+
+----
+
+Seotitleseparator: |
+
+----
+
+Seodescription: Capacitación y seguridad industrial con validez STPS: constancias DC-3 el mismo día, cursos NOM y cobertura en todo México.
+
+----
+
+Seorobots: index,follow
+
+----
+
+Seothemecolor: #060b16
+
+----
+
+Seoogsitename: SICSI
+
+----
+
+Seooglocale: es_MX
+
+----
+
+Seoogimage: 
+
+----
+
+Seotwittercard: summary_large_image
+
+----
+
+Seotwittersite: 

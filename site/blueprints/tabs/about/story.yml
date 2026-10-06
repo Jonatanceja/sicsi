@@ -1,0 +1,97 @@
+label: Quiénes somos
+icon: users
+sections:
+  content:
+    type: fields
+    fields:
+      storyEyebrow:
+        label: Antetítulo
+        type: text
+        width: 1/2
+      storyTitle:
+        label: Título
+        type: text
+        width: 1/2
+      storyText:
+        label: Texto
+        type: textarea
+        size: medium
+        help: Separa los párrafos con una línea en blanco.
+      storyStats:
+        label: Cifras
+        type: structure
+        columns:
+          value: true
+          label: true
+        fields:
+          value:
+            label: Valor
+            type: text
+            width: 1/3
+          label:
+            label: Etiqueta
+            type: text
+            width: 1/3
+          tone:
+            label: Color
+            type: select
+            default: brand
+            options:
+              brand: Naranja
+              dark: Oscuro
+              green: Verde
+            width: 1/3
+      storyImage:
+        label: Imagen
+        type: files
+        query: page.images
+        multiple: false
+        uploads:
+          template: image
+      storyCardIcon:
+        label: Tarjeta sobre la imagen – icono
+        extends: fields/icon
+        width: 1/3
+      storyCardTitle:
+        label: Tarjeta – título
+        type: text
+        width: 1/3
+      storyCardStatus:
+        label: Tarjeta – estado
+        type: text
+        width: 1/3
+      storyCardText:
+        label: Tarjeta – texto
+        type: text
+      pillarsTitle:
+        label: Título de los ejes
+        type: text
+      pillars:
+        label: Ejes de actuación
+        type: structure
+        columns:
+          tag: true
+          title: true
+        fields:
+          icon:
+            extends: fields/icon
+            width: 1/3
+          tag:
+            label: Etiqueta
+            type: text
+            width: 2/3
+          title:
+            label: Título
+            type: text
+          text:
+            label: Texto
+            type: textarea
+            size: small
+          footerIcon:
+            label: Icono del pie
+            extends: fields/icon
+            width: 1/3
+          footerLabel:
+            label: Texto del pie
+            type: text
+            width: 2/3

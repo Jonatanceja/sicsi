@@ -1,0 +1,143 @@
+label: Cotización
+icon: email
+sections:
+  content:
+    type: fields
+    fields:
+      quoteEyebrow:
+        label: Antetítulo
+        type: text
+      quoteTitle:
+        label: Título
+        type: text
+      quoteText:
+        label: Descripción
+        type: textarea
+        size: small
+      quoteContacts:
+        label: Contactos directos
+        type: structure
+        columns:
+          label: true
+          value: true
+        fields:
+          icon:
+            extends: fields/icon
+            width: 1/3
+          label:
+            label: Etiqueta
+            type: text
+            width: 2/3
+          value:
+            label: Valor visible
+            type: text
+            width: 1/2
+          url:
+            label: Enlace (tel:, https://wa.me/…)
+            type: text
+            width: 1/2
+      quoteNoteIcon:
+        label: Icono de la nota
+        extends: fields/icon
+        width: 1/3
+      quoteNote:
+        label: Nota de acreditación
+        type: text
+        width: 2/3
+
+      formHeadline:
+        label: Formulario
+        type: headline
+      formTitle:
+        label: Título del formulario
+        type: text
+        width: 1/2
+      formBadge:
+        label: Insignia
+        type: text
+        width: 1/2
+      formText:
+        label: Descripción del formulario
+        type: text
+      formRecipient:
+        label: Correo que recibe las solicitudes
+        type: email
+        help: Si está vacío se usa MAIL_FROM_ADDRESS del .env.
+      formNameLabel:
+        label: Nombre – etiqueta
+        type: text
+        width: 1/4
+      formNamePlaceholder:
+        label: Nombre – ejemplo
+        type: text
+        width: 1/4
+      formCompanyLabel:
+        label: Empresa – etiqueta
+        type: text
+        width: 1/4
+      formCompanyPlaceholder:
+        label: Empresa – ejemplo
+        type: text
+        width: 1/4
+      formEmailLabel:
+        label: Correo – etiqueta
+        type: text
+        width: 1/4
+      formEmailPlaceholder:
+        label: Correo – ejemplo
+        type: text
+        width: 1/4
+      formPhoneLabel:
+        label: Teléfono – etiqueta
+        type: text
+        width: 1/4
+      formPhonePlaceholder:
+        label: Teléfono – ejemplo
+        type: text
+        width: 1/4
+      formCourseLabel:
+        label: Curso – etiqueta
+        type: text
+      formCourseOptions:
+        label: Cursos disponibles
+        type: structure
+        columns:
+          label: true
+        fields:
+          label:
+            label: Curso
+            type: text
+      formPeopleLabel:
+        label: Personas – etiqueta
+        type: text
+        width: 1/2
+      formPeoplePlaceholder:
+        label: Personas – ejemplo
+        type: text
+        width: 1/2
+      formModalityLabel:
+        label: Modalidad – etiqueta
+        type: text
+      formModalityOptions:
+        label: Modalidades
+        type: structure
+        columns:
+          label: true
+        fields:
+          label:
+            label: Modalidad
+            type: text
+      formSubmitLabel:
+        label: Botón de envío
+        type: text
+        width: 1/2
+      formSubmitIcon:
+        label: Icono del botón
+        extends: fields/icon
+        width: 1/2
+      formSuccess:
+        label: Mensaje de éxito
+        type: text
+      formError:
+        label: Mensaje de error
+        type: text

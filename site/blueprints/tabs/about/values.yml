@@ -1,0 +1,35 @@
+label: Valores
+icon: heart
+sections:
+  content:
+    type: fields
+    fields:
+      valuesEyebrow:
+        label: Antetítulo
+        type: text
+        width: 1/2
+      valuesTitle:
+        label: Título
+        type: text
+        width: 1/2
+      valuesText:
+        label: Texto lateral
+        type: textarea
+        size: small
+      values:
+        label: Valores
+        type: structure
+        columns:
+          title: true
+        fields:
+          icon:
+            extends: fields/icon
+            width: 1/3
+          title:
+            label: Título
+            type: text
+            width: 2/3
+          text:
+            label: Texto
+            type: textarea
+            size: small

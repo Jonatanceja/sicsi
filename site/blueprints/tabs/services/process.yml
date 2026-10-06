@@ -1,0 +1,39 @@
+label: Proceso
+icon: list-bullet
+sections:
+  content:
+    type: fields
+    fields:
+      processEyebrow:
+        label: Antetítulo
+        type: text
+      processTitle:
+        label: Título
+        type: text
+      processText:
+        label: Descripción
+        type: text
+      processSteps:
+        label: Pasos
+        type: structure
+        columns:
+          title: true
+        fields:
+          icon:
+            extends: fields/icon
+            width: 1/3
+          title:
+            label: Título
+            type: text
+            width: 2/3
+          text:
+            label: Texto
+            type: textarea
+            size: small
+          tags:
+            label: Etiquetas
+            type: tags
+          featured:
+            label: Destacar (tarjeta oscura)
+            type: toggle
+            text: Sí

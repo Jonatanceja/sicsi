@@ -2,7 +2,82 @@
 
 @plugin "@tailwindcss/typography";
 @source "../../site/templates";
+@source "../../app";
 
 @theme {
     --font-sans: 'Inter', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+    --font-display: 'Montserrat', 'Inter', ui-sans-serif, system-ui, sans-serif;
+
+    --color-ink-950: #060b16;
+    --color-ink-900: #0a1224;
+    --color-ink-800: #111c36;
+    --color-ink-700: #1b2848;
+    --color-brand-400: #fb923c;
+    --color-brand-500: #f97316;
+    --color-brand-600: #ea580c;
+
+    --animate-fade-up: fade-up 0.7s ease-out both;
+
+    @keyframes fade-up {
+        from {
+            opacity: 0;
+            transform: translateY(1.25rem);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+}
+
+@layer base {
+    html {
+        scroll-behavior: smooth;
+        scroll-padding-top: 6rem;
+    }
+
+    body {
+        @apply bg-white font-sans text-slate-700 antialiased;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4 {
+        @apply font-display tracking-tight;
+    }
+}
+
+@layer components {
+    .btn {
+        @apply inline-flex items-center justify-center gap-2 rounded-xl px-6 py-3.5 text-sm font-bold transition duration-200 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-400;
+    }
+
+    .btn-primary {
+        @apply bg-brand-500 text-white shadow-lg shadow-brand-500/25 hover:-translate-y-0.5 hover:bg-brand-600 hover:shadow-brand-500/40;
+    }
+
+    .btn-ghost {
+        @apply border border-white/15 bg-white/5 text-white backdrop-blur hover:border-white/30 hover:bg-white/10;
+    }
+
+    .eyebrow {
+        @apply inline-flex items-center gap-2 text-[0.7rem] font-bold tracking-[0.18em] text-brand-600 uppercase;
+    }
+
+    .section {
+        @apply px-4 py-20 sm:px-6 sm:py-24 lg:px-8;
+    }
+
+    .container-x {
+        @apply mx-auto w-full max-w-7xl;
+    }
+
+    .card {
+        @apply rounded-2xl border border-slate-200 bg-white p-6 shadow-sm transition duration-300 hover:-translate-y-1 hover:shadow-xl hover:shadow-slate-900/5;
+    }
+}
+
+[x-cloak] {
+    display: none !important;
 }

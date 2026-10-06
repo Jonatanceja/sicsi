@@ -1,0 +1,66 @@
+label: Normas
+icon: file-document
+sections:
+  content:
+    type: fields
+    fields:
+      normsEyebrow:
+        label: Antetítulo
+        type: text
+        width: 1/2
+      normsEyebrowIcon:
+        label: Icono del antetítulo
+        extends: fields/icon
+        width: 1/2
+      normsTitle:
+        label: Título
+        type: text
+      normsText:
+        label: Descripción
+        type: textarea
+        size: small
+      normsLinkLabel:
+        label: Enlace – texto
+        type: text
+        width: 1/2
+      normsLinkUrl:
+        label: Enlace – URL
+        type: text
+        width: 1/2
+      normsHoursIcon:
+        label: Icono de duración
+        extends: fields/icon
+        width: 1/2
+      normsProofIcon:
+        label: Icono de constancia
+        extends: fields/icon
+        width: 1/2
+      normsCards:
+        label: Normas
+        type: structure
+        columns:
+          code: true
+          title: true
+        fields:
+          code:
+            label: Clave de la norma
+            type: text
+            width: 1/2
+          icon:
+            extends: fields/icon
+            width: 1/2
+          title:
+            label: Título
+            type: text
+          text:
+            label: Texto
+            type: textarea
+            size: small
+          hours:
+            label: Duración
+            type: text
+            width: 1/2
+          proof:
+            label: Constancia
+            type: text
+            width: 1/2

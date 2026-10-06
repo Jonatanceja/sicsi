@@ -1,0 +1,41 @@
+label: Llamado a la acción
+icon: megaphone
+sections:
+  content:
+    type: fields
+    fields:
+      ctaEyebrowIcon:
+        label: Icono del antetítulo
+        extends: fields/icon
+        width: 1/3
+      ctaEyebrow:
+        label: Antetítulo
+        type: text
+        width: 2/3
+      ctaTitle:
+        label: Título
+        type: text
+      ctaText:
+        label: Descripción
+        type: textarea
+        size: small
+      ctaPrimaryLabel:
+        label: Botón principal – texto
+        type: text
+        width: 1/4
+      ctaPrimaryIcon:
+        label: Botón principal – icono
+        extends: fields/icon
+        width: 1/4
+      ctaPrimaryUrl:
+        label: Botón principal – enlace
+        type: text
+        width: 1/2
+      ctaSecondaryLabel:
+        label: Botón secundario – texto
+        type: text
+        width: 1/2
+      ctaSecondaryUrl:
+        label: Botón secundario – enlace
+        type: text
+        width: 1/2

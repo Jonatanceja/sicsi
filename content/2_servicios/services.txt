@@ -1,0 +1,614 @@
+Title: Servicios
+
+----
+
+Heroimage: 
+
+----
+
+Herobadgeicon: shield-check
+
+----
+
+Herobadge: Portafolio integral de servicios & cumplimiento legal
+
+----
+
+Herotitle: Soluciones Integrales en Seguridad Industrial, Normatividad STPS y Protección Civil
+
+----
+
+Herotext: Capacitación especializada con entrega inmediata de constancias DC-3, formación de brigadas operativas y consultoría técnica de alto nivel para blindar legalmente a tu empresa.
+
+----
+
+Herochips:
+
+- 
+  icon: bolt
+  text: Entrega inmediata DC-3
+- 
+  icon: check-circle
+  text: Validez oficial STPS
+- 
+  icon: academic-cap
+  text: Instructores acreditados
+- 
+  icon: globe
+  text: Atención a nivel nacional
+
+----
+
+Heroprimarylabel: Solicitar cotización de servicios
+
+----
+
+Heroprimaryicon: chevron-down
+
+----
+
+Heroprimaryurl: #cotizar
+
+----
+
+Herosecondarylabel: Ver proceso de 5 pasos
+
+----
+
+Herosecondaryicon: clipboard-check
+
+----
+
+Herosecondaryurl: #proceso
+
+----
+
+Processeyebrow: Calidad y rigor operativo
+
+----
+
+Processtitle: Nuestra Metodología de Trabajo: Proceso Garantizado de 5 Pasos
+
+----
+
+Processtext: En SICSI estructuramos cada servicio asegurando la máxima eficiencia normativa y pedagógica, cuidando los tiempos productivos de la planta.
+
+----
+
+Processsteps:
+
+- 
+  icon: clipboard-check
+  title: 'Diagnóstico Inicial & DNC'
+  text: >
+    Analizamos las operaciones, la matriz de
+    riesgos y la situación normativa de la
+    empresa para detectar brechas de
+    capacitación.
+  tags: Análisis in-situ, Mapeo de riesgos
+  featured: 'false'
+- 
+  icon: pencil-square
+  title: Diseño a la Medida
+  text: >
+    Personalizamos los contenidos teóricos
+    y prácticos para alinearlos con la
+    realidad operativa de tu centro de
+    trabajo y tus instructores STPS.
+  tags: Adaptación curricular, Alineación STPS
+  featured: 'false'
+- 
+  icon: user-group
+  title: Ejecución de la Capacitación
+  text: >
+    Impartición de cursos
+    teórico-prácticos (presencial,
+    híbrida o en línea) a cargo de
+    especialistas del padrón de
+    instructores STPS.
+  tags: >
+    Instructores registrados, Práctica
+    80/20
+  featured: 'false'
+- 
+  icon: chart-bar
+  title: Evaluación de Competencias
+  text: >
+    Aplicación de exámenes teóricos y
+    pruebas de desempeño práctico para
+    validar el aprendizaje real de los
+    colaboradores en planta.
+  tags: Rúbricas técnicas, Validación real
+  featured: 'false'
+- 
+  icon: document-text
+  title: 'Cierre Normativo & DC-3 Inmediata'
+  text: >
+    Generación e integración de
+    constancias de competencias laborales
+    (DC-3) con validez oficial ante la STPS
+    y entrega el mismo día.
+  tags: Garantía mismo día, Expediente listo
+  featured: 'true'
+
+----
+
+Trainingeyebrow: Pilar formativo principal
+
+----
+
+Trainingtitle: Capacitación Normativa STPS (Constancias DC-3 el Mismo Día)
+
+----
+
+Trainingtext: Cursos teóricos y prácticos enfocados en el cumplimiento de las Normas Oficiales Mexicanas de la STPS, diseñados para prevención de incidentes críticos.
+
+----
+
+Trainingbadgeicon: check-circle
+
+----
+
+Trainingbadge: Formato DC-3 digital & físico inmediato
+
+----
+
+Trainingnoteicon: check-circle
+
+----
+
+Trainingprooficon: bolt
+
+----
+
+Trainingctalabel: Cotizar curso
+
+----
+
+Trainingctaurl: #cotizar
+
+----
+
+Trainingcards:
+
+- 
+  code: NOM-009-STPS
+  hours: 8 horas
+  title: Trabajos en Alturas
+  text: >
+    Uso y revisión de arneses, líneas de
+    vida, andamios, plataformas elevadoras y
+    protocolos de rescate en suspensión.
+  note: >
+    Incluye práctica de ascenso y cálculo
+    de distancia de caída
+  proof: DC-3 mismo día
+- 
+  code: NOM-033-STPS
+  hours: 8 horas
+  title: Espacios Confinados
+  text: >
+    Monitoreo de atmósferas peligrosas
+    (oxígeno, LEL, H2S, CO2), ventilación
+    forzada continua, permisos de trabajo en
+    suspensión.
+  note: >
+    Uso de trípode, detector multigás y
+    equipo autónomo
+  proof: DC-3 mismo día
+- 
+  code: NOM-027-STPS
+  hours: 8 horas
+  title: Corte y Soldadura
+  text: >
+    Prevención de conflagraciones en
+    actividades calientes, almacenamiento y
+    manejo de cilindros de gas comprimido,
+    uso de bombeos y EPP específico.
+  note: >
+    Inspección de manómetros,
+    arrestallamas y extintor vigía
+  proof: DC-3 mismo día
+- 
+  code: NOM-006-STPS
+  hours: 8 a 16 horas
+  title: >
+    Manejo de Montacargas y Maquinaria
+    Pesada
+  text: >
+    Operación segura de montacargas hombre
+    sentado y parado, checklist
+    pre-operacional, centro de carga,
+    triángulo de estabilidad y visitas
+    segura.
+  note: >
+    Evaluación en patio con maniobras de
+    precisión y carga
+  proof: DC-3 mismo día
+- 
+  code: NOM-004-STPS
+  hours: 6 horas
+  title: Bloqueo y Etiquetado (LOTO)
+  text: >
+    Sistemas y dispositivos de protección
+    en maquinaria, candados de fuentes de
+    energía residual (eléctrica,
+    hidráulica, neumática y térmica).
+  note: >
+    Protocolo de verificación de energía
+    cero paso a paso
+  proof: DC-3 mismo día
+- 
+  code: NOM-018-STPS
+  hours: 6 horas
+  title: >
+    Manejo de Sustancias Químicas
+    Peligrosas
+  text: >
+    Sistema Globalmente Armonizado (SGA)
+    para la identificación, interpretación
+    de pictogramas y Hojas de Datos de
+    Seguridad (HDS).
+  note: >
+    Control de derrames con kits y
+    compatibilidad química
+  proof: DC-3 mismo día
+
+----
+
+Brigadeseyebrow: Capacidad de respuesta operativa
+
+----
+
+Brigadestitle: Protección Civil y Brigadas de Emergencia
+
+----
+
+Brigadestext: Formación de brigadas comunitarias y empresariales para la preparación, mitigación y respuesta inmediata ante contingencias naturales o humanas.
+
+----
+
+Brigadescards:
+
+- 
+  icon: plus-circle
+  title: Brigada de Primeros Auxilios
+  text: >
+    Soporte básico de vida, control de
+    hemorragias masivas, inmovilización de
+    fracturas, quemaduras, protocolo RCP y
+    uso de Desfibrilador Externo Automático
+    (DEA).
+  tag: Práctica con maniquíes de reanimación
+- 
+  icon: fire
+  title: Prevención y Combate de Incendios
+  text: >
+    Manejo y descarga real de extintores
+    (PQS y CO2), química y tipos de fuego,
+    tendido de mangueras industriales y
+    técnicas de ataque en conatos de
+    incendio.
+  tag: Alineado a NOM-002-STPS
+- 
+  icon: map-pin
+  title: Evacuación, Búsqueda y Rescate
+  text: >
+    Rutas de repliegue y desalojo, conteo de
+    personal en puntos de reunión,
+    señalización de emergencia y traslado
+    de lesionados.
+  tag: Protocolos de repliegue y salida
+- 
+  icon: shield-check
+  title: Comité Interno de Protección Civil
+  text: >
+    Estructura organizacional institucional,
+    delimitación de responsabilidades de
+    jefes de piso y brigadistas, actas
+    constitutivas y calendario anual de
+    simulacros.
+  tag: Acta constitutiva lista
+
+----
+
+Consultingeyebrow: Blindaje legal y dictaminación
+
+----
+
+Consultingtitle: Servicios Especializados y Consultoría Técnica
+
+----
+
+Consultingtext: Acompañamiento técnico, documental y normativo integral para blindar jurídicamente las operaciones de tu planta e instalaciones corporativas.
+
+----
+
+Consultingcheckicon: check
+
+----
+
+Consultingctaicon: arrow-right
+
+----
+
+Consultingcards:
+
+- 
+  icon: document-text
+  tag: Trámite oficial
+  title: Elaboración e Implementación del PIPC
+  text: 'Programa Interno de Protección Civil: asesoría integral, elaboración de carpetas técnicas, planos de evacuación, análisis de vulnerabilidad, gestión de visitas bureau y dictámenes ante autoridades estatales y municipales.'
+  features: >
+    Carpetas técnicas, Gestión de Visto
+    Bueno, Memoria de simulacros, Registro
+    con Perito
+  ctalabel: Consultar registro de PIPC
+  ctaurl: '#cotizar'
+- 
+  icon: magnifying-glass
+  tag: Evaluación in-situ
+  title: >
+    Estudios Normativos y Diagnósticos de
+    Seguridad
+  text: >
+    Levantamiento de diagnósticos en
+    plantas industriales y centros de
+    trabajo para la determinación de equipo
+    de protección personal (EPP bajo
+    NOM-017), atlas de riesgo, tierras
+    físicas y técnicas aplicables al giro
+    de actividad.
+  features: >
+    Determinación de EPP, Matriz de
+    cumplimiento, Atlas de riesgo integral,
+    Priorización preventiva
+  ctalabel: Solicitar diagnóstico de planta
+  ctaurl: '#cotizar'
+- 
+  icon: scale
+  tag: Defensa y auditoría
+  title: Auditorías de Inspección STPS
+  text: >
+    Acompañamiento técnico y legal
+    preventivo y correctivo durante y
+    después de inspecciones federales o
+    estatales de condiciones generales de
+    trabajo, seguridad, salud en el trabajo
+    y medio ambiente laboral.
+  features: >
+    Simulacro de inspección, Atención de
+    emplazamientos, Integración de
+    carpetas, Cero multas garantizado
+  ctalabel: Preparar auditoría STPS
+  ctaurl: '#cotizar'
+- 
+  icon: exclamation-triangle
+  tag: Análisis operativo
+  title: >
+    Análisis de Riesgos por Puesto (AST /
+    JSA)
+  text: >
+    Elaboración de Análisis de Seguridad
+    en el Trabajo (AST/JSA), permisos de
+    trabajo de alto riesgo (PTAR) y
+    procedimientos normalizados de
+    operación para cuadrillas de
+    mantenimiento, soldadura y producción.
+  features: >
+    Formatos AST listos, Protocolos PTAR,
+    Procedimientos seguros, Capacitación a
+    supervisores
+  ctalabel: Solicitar análisis de puestos
+  ctaurl: '#cotizar'
+
+----
+
+Quoteeyebrow: Respuesta en menos de 24 horas
+
+----
+
+Quotetitle: Solicita tu Cotización Inmediata de Capacitación o Consultoría
+
+----
+
+Quotetext: Nuestros especialistas en normatividad STPS y Protección Civil diseñan propuestas a la medida de tu centro de trabajo con validez oficial garantizada y entrega de DC-3 el mismo día.
+
+----
+
+Quotecontacts:
+
+- 
+  icon: phone
+  label: Línea directa industrial
+  value: +52 (55) 5824-0912
+  url: tel:+525558240912
+- 
+  icon: envelope
+  label: Mesa de cotizaciones corporativas
+  value: contacto@sicsi.com.mx
+  url: mailto:contacto@sicsi.com.mx
+- 
+  icon: shield-check
+  label: Registro acreditado
+  value: Agente Capacitador Externo STPS
+  url: '#'
+
+----
+
+Quotenotetag: Garantía DC-3
+
+----
+
+Quotenote: Emitimos constancias DC-3 con firma de instructor registrado ante la STPS y número de registro de capacitador activo.
+
+----
+
+Formrecipient: 
+
+----
+
+Formnamelabel: Nombre completo *
+
+----
+
+Formnameplaceholder: Ej. Ing. Roberto Mendoza
+
+----
+
+Formcompanylabel: Empresa o razón social *
+
+----
+
+Formcompanyplaceholder: Ej. Manufacturas del Norte S.A. de C.V.
+
+----
+
+Formemaillabel: Correo corporativo *
+
+----
+
+Formemailplaceholder: rmendoza@empresa.com
+
+----
+
+Formphonelabel: Teléfono / celular *
+
+----
+
+Formphoneplaceholder: +52 55 1234 5678
+
+----
+
+Formservicelabel: Servicio o curso de interés *
+
+----
+
+Formserviceoptions:
+
+- 
+  label: Selecciona el servicio que requieres
+- 
+  label: NOM-009 (Trabajos en alturas)
+- 
+  label: NOM-033 (Espacios confinados)
+- 
+  label: NOM-027 (Corte y soldadura)
+- 
+  label: NOM-006 (Montacargas y maquinaria)
+- 
+  label: NOM-004 (Bloqueo y etiquetado)
+- 
+  label: NOM-018 (Sustancias químicas)
+- 
+  label: Brigadas de emergencia
+- 
+  label: PIPC / Protección Civil
+- 
+  label: Auditoría o diagnóstico STPS
+- 
+  label: Otro / Paquete personalizado
+
+----
+
+Formlocationlabel: Ciudad / estado
+
+----
+
+Formlocationplaceholder: Ej. Querétaro, Qro.
+
+----
+
+Formpeoplelabel: N.º de personas *
+
+----
+
+Formpeopleoptions:
+
+- 
+  label: 1 a 5 personas
+- 
+  label: 6 a 15 personas
+- 
+  label: 16 a 30 personas
+- 
+  label: Más de 30 personas
+
+----
+
+Formmodalitylabel: Modalidad *
+
+----
+
+Formmodalityoptions:
+
+- 
+  label: Presencial in-situ
+- 
+  label: En línea
+- 
+  label: Mixta
+
+----
+
+Formcommentslabel: Comentarios o requerimientos específicos (opcional)
+
+----
+
+Formcommentsplaceholder: Indica fechas estimadas, requerimientos de turno o particularidades de tu operación...
+
+----
+
+Formsubmitlabel: Solicitar cotización formal (DC-3 garantizado)
+
+----
+
+Formsubmiticon: arrow-right
+
+----
+
+Formsuccess: ¡Gracias! Recibimos tu solicitud y te contactaremos en menos de 24 horas.
+
+----
+
+Formerror: No pudimos enviar tu solicitud. Revisa los datos e inténtalo de nuevo.
+
+----
+
+Seotitle: Servicios de Capacitación STPS y Seguridad | SICSI
+
+----
+
+Seodescription: Cursos NOM con constancia DC-3 el mismo día, brigadas de emergencia, PIPC y consultoría técnica STPS para plantas industriales en todo México.
+
+----
+
+Seokeywords: 
+
+----
+
+Seorobots: 
+
+----
+
+Ogtitle: 
+
+----
+
+Ogtype: website
+
+----
+
+Ogdescription: 
+
+----
+
+Ogimage: 
+
+----
+
+Ogimagealt: 
+
+----
+
+Uuid: nmfypppurft6lgh6

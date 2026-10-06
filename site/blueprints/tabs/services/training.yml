@@ -1,0 +1,68 @@
+label: Capacitación
+icon: file-document
+sections:
+  content:
+    type: fields
+    fields:
+      trainingEyebrow:
+        label: Antetítulo
+        type: text
+      trainingTitle:
+        label: Título
+        type: text
+      trainingText:
+        label: Descripción
+        type: textarea
+        size: small
+      trainingBadgeIcon:
+        label: Icono de la insignia
+        extends: fields/icon
+        width: 1/3
+      trainingBadge:
+        label: Insignia
+        type: text
+        width: 2/3
+      trainingNoteIcon:
+        label: Icono de la nota de cada curso
+        extends: fields/icon
+        width: 1/3
+      trainingProofIcon:
+        label: Icono de la constancia
+        extends: fields/icon
+        width: 1/3
+      trainingCtaLabel:
+        label: Enlace de cada curso – texto
+        type: text
+        width: 1/3
+      trainingCtaUrl:
+        label: Enlace de cada curso – URL
+        type: text
+      trainingCards:
+        label: Cursos
+        type: structure
+        columns:
+          code: true
+          title: true
+          hours: true
+        fields:
+          code:
+            label: Clave de la norma
+            type: text
+            width: 1/2
+          hours:
+            label: Duración
+            type: text
+            width: 1/2
+          title:
+            label: Título
+            type: text
+          text:
+            label: Texto
+            type: textarea
+            size: small
+          note:
+            label: Nota
+            type: text
+          proof:
+            label: Constancia
+            type: text

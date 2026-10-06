@@ -1,0 +1,71 @@
+label: Hero
+icon: image
+sections:
+  content:
+    type: fields
+    fields:
+      heroImage:
+        label: Imagen de fondo
+        type: files
+        query: page.images
+        multiple: false
+        uploads:
+          template: image
+      heroBadge:
+        label: Insignia superior
+        type: text
+        width: 1/2
+      heroBadgeIcon:
+        label: Icono de la insignia
+        extends: fields/icon
+        width: 1/2
+      heroTitleStart:
+        label: Título – inicio
+        type: text
+        width: 1/3
+      heroTitleHighlight:
+        label: Título – texto resaltado
+        type: text
+        width: 1/3
+      heroTitleEnd:
+        label: Título – final
+        type: text
+        width: 1/3
+      heroText:
+        label: Descripción
+        type: textarea
+        size: small
+      heroPrimaryLabel:
+        label: Botón principal – texto
+        type: text
+        width: 1/4
+      heroPrimaryUrl:
+        label: Botón principal – enlace
+        type: text
+        width: 1/4
+      heroSecondaryLabel:
+        label: Botón secundario – texto
+        type: text
+        width: 1/4
+      heroSecondaryUrl:
+        label: Botón secundario – enlace
+        type: text
+        width: 1/4
+      heroHighlights:
+        label: Datos destacados
+        type: structure
+        columns:
+          title: true
+          text: true
+        fields:
+          icon:
+            extends: fields/icon
+            width: 1/3
+          title:
+            label: Título
+            type: text
+            width: 1/3
+          text:
+            label: Texto
+            type: text
+            width: 1/3

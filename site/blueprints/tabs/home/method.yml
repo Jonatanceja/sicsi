@@ -1,0 +1,37 @@
+label: Metodología
+icon: list-bullet
+sections:
+  content:
+    type: fields
+    fields:
+      methodEyebrow:
+        label: Antetítulo
+        type: text
+      methodTitle:
+        label: Título
+        type: text
+      methodText:
+        label: Descripción
+        type: textarea
+        size: small
+      methodSteps:
+        label: Fases
+        type: structure
+        columns:
+          title: true
+          phase: true
+        fields:
+          icon:
+            extends: fields/icon
+            width: 1/3
+          title:
+            label: Título
+            type: text
+            width: 2/3
+          text:
+            label: Texto
+            type: textarea
+            size: small
+          phase:
+            label: Etiqueta de fase
+            type: text

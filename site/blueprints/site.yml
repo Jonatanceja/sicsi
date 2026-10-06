@@ -1,37 +1,307 @@
 title: Sitio
-tabs:
 
-  # Pages
+tabs:
   pages:
     label:
       es: Páginas
       en: Pages
     icon: dashboard
     sections:
-
-      # Pages
       pages:
         headline: Pages
         type: pages
 
-  # Settings
+  brand:
+    label: Logotipo
+    icon: image
+    sections:
+      content:
+        type: fields
+        fields:
+          brandLogo:
+            label: Logotipo (navegación)
+            type: files
+            query: site.images
+            multiple: false
+            uploads:
+              template: image
+            help: Se muestra sobre fondo blanco. Se recomienda SVG.
+          brandFavicon:
+            label: Favicon
+            type: files
+            query: site.images
+            multiple: false
+            uploads:
+              template: image
+            help: Ícono de la pestaña del navegador. Se recomienda SVG.
+          brandName:
+            label: Nombre de la marca
+            type: text
+            help: Texto alternativo del logotipo y respaldo si no hay imagen.
+            width: 1/2
+          brandTagline:
+            label: Lema
+            type: text
+            width: 1/2
+
+  header:
+    label: Encabezado
+    icon: window
+    sections:
+      content:
+        type: fields
+        fields:
+          topBarPhoneIcon:
+            label: Icono teléfono
+            extends: fields/icon
+            width: 1/4
+          topBarPhone:
+            label: Teléfono
+            type: text
+            width: 1/4
+          topBarEmailIcon:
+            label: Icono correo
+            extends: fields/icon
+            width: 1/4
+          topBarEmail:
+            label: Correo
+            type: email
+            width: 1/4
+          topBarTagIcon:
+            label: Icono acreditación
+            extends: fields/icon
+            width: 1/4
+          topBarTag:
+            label: Acreditación
+            type: text
+            width: 1/4
+          topBarCoverageIcon:
+            label: Icono cobertura
+            extends: fields/icon
+            width: 1/4
+          topBarCoverage:
+            label: Cobertura
+            type: text
+            width: 1/4
+          navItems:
+            label: Menú de navegación
+            type: structure
+            columns:
+              label: true
+              url: true
+            fields:
+              label:
+                label: Texto
+                type: text
+                width: 1/2
+              url:
+                label: Enlace
+                type: text
+                width: 1/2
+          navCtaLabel:
+            label: Botón – texto
+            type: text
+            width: 1/3
+          navCtaUrl:
+            label: Botón – enlace
+            type: text
+            width: 1/3
+          navCtaIcon:
+            label: Botón – icono
+            extends: fields/icon
+            width: 1/3
+
+  footer:
+    label: Pie de página
+    icon: info-card
+    sections:
+      content:
+        type: fields
+        fields:
+          footerDescription:
+            label: Descripción
+            type: textarea
+            size: small
+          footerBadgeIcon:
+            label: Icono de la insignia
+            extends: fields/icon
+            width: 1/3
+          footerBadge:
+            label: Insignia
+            type: text
+            width: 2/3
+          footerServicesTitle:
+            label: Servicios – título
+            type: text
+          footerServices:
+            label: Servicios
+            type: structure
+            columns:
+              label: true
+            fields:
+              label:
+                label: Texto
+                type: text
+              url:
+                label: Enlace
+                type: text
+          footerRegulationTitle:
+            label: Marco regulatorio – título
+            type: text
+          footerRegulation:
+            label: Marco regulatorio
+            type: structure
+            columns:
+              code: true
+              text: true
+            fields:
+              code:
+                label: Clave
+                type: text
+                width: 1/3
+              text:
+                label: Descripción
+                type: text
+                width: 2/3
+          footerContactTitle:
+            label: Contacto – título
+            type: text
+          footerContactText:
+            label: Contacto – texto
+            type: textarea
+            size: small
+          footerPhone:
+            label: Teléfono
+            type: text
+            width: 1/2
+          footerEmail:
+            label: Correo
+            type: email
+            width: 1/2
+          footerHours:
+            label: Horario
+            type: text
+          footerCopyright:
+            label: Derechos reservados
+            type: text
+          footerLinks:
+            label: Enlaces legales
+            type: structure
+            columns:
+              label: true
+              url: true
+            fields:
+              label:
+                label: Texto
+                type: text
+                width: 1/2
+              url:
+                label: Enlace
+                type: text
+                width: 1/2
+          footerCreditHeadline:
+            label: Crédito de diseño y desarrollo
+            type: headline
+          footerCreditText:
+            label: Texto
+            type: text
+            width: 1/3
+          footerCreditUrl:
+            label: Enlace
+            type: text
+            width: 1/3
+          footerCreditLogo:
+            label: Ícono
+            type: files
+            query: site.images
+            multiple: false
+            uploads:
+              template: image
+            width: 1/3
+
+  seo:
+    label: SEO
+    icon: search
+    sections:
+      content:
+        type: fields
+        fields:
+          seoDefaultsHeadline:
+            label: Valores por defecto
+            type: headline
+          seoTitleSeparator:
+            label: Separador del título
+            type: text
+            default: '|'
+            width: 1/4
+            help: Resultado, p. ej.&#58; Título de la página | Nombre del sitio
+          seoDescription:
+            label: Meta descripción por defecto
+            type: textarea
+            size: small
+            maxlength: 160
+            counter: true
+            width: 3/4
+            help: Se usa en las páginas que no definen la suya.
+          seoRobots:
+            label: Indexación
+            type: select
+            default: index,follow
+            options:
+              index,follow: Permitir indexar (index, follow)
+              noindex,nofollow: Bloquear (noindex, nofollow)
+            width: 1/2
+          seoThemeColor:
+            label: Color del navegador (móvil)
+            type: text
+            default: '#060b16'
+            width: 1/2
+          ogHeadline:
+            label: Open Graph y redes sociales
+            type: headline
+          seoOgSiteName:
+            label: Nombre del sitio (og:site_name)
+            type: text
+            width: 1/2
+          seoOgLocale:
+            label: Idioma / región (og:locale)
+            type: text
+            default: es_MX
+            width: 1/2
+          seoOgImage:
+            label: Imagen por defecto
+            type: files
+            query: site.images
+            multiple: false
+            uploads:
+              template: image
+            help: 1200 × 630 px (JPG o PNG). Se usa cuando la página no tiene imagen propia.
+          seoTwitterCard:
+            label: Tipo de tarjeta de Twitter / X
+            type: select
+            default: summary_large_image
+            options:
+              summary_large_image: Resumen con imagen grande
+              summary: Resumen
+            width: 1/2
+          seoTwitterSite:
+            label: Usuario de Twitter / X
+            type: text
+            placeholder: '@sicsi'
+            width: 1/2
+
   settings:
     label:
       es: Configuration
       en: Settings
     icon: settings
     columns:
-
-      # Settings/Content
       content:
         type: fields
         width: 2/3
         fields:
-
           settingsLine:
             type: line
-
-      # Settings/Sidebar
       sidebar:
         sticky: true
         width: 1/3

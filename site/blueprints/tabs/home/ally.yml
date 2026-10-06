@@ -1,0 +1,56 @@
+label: Aliado
+icon: users
+sections:
+  content:
+    type: fields
+    fields:
+      allyImage:
+        label: Imagen
+        type: files
+        query: page.images
+        multiple: false
+        uploads:
+          template: image
+      allyImageTag:
+        label: Etiqueta sobre la imagen
+        type: text
+        width: 1/2
+      allyCardIcon:
+        label: Icono de la tarjeta flotante
+        extends: fields/icon
+        width: 1/2
+      allyCardTitle:
+        label: Tarjeta flotante – título
+        type: text
+      allyCardText:
+        label: Tarjeta flotante – texto
+        type: textarea
+        size: small
+      allyEyebrow:
+        label: Antetítulo
+        type: text
+      allyTitle:
+        label: Título
+        type: text
+      allyText:
+        label: Descripción
+        type: textarea
+        size: small
+      allyItems:
+        label: Beneficios
+        type: structure
+        columns:
+          title: true
+          text: true
+        fields:
+          icon:
+            extends: fields/icon
+            width: 1/3
+          title:
+            label: Título
+            type: text
+            width: 2/3
+          text:
+            label: Texto
+            type: textarea
+            size: small

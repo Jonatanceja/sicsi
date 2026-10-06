@@ -1,0 +1,37 @@
+label: Brigadas
+icon: users
+sections:
+  content:
+    type: fields
+    fields:
+      brigadesEyebrow:
+        label: Antetítulo
+        type: text
+      brigadesTitle:
+        label: Título
+        type: text
+      brigadesText:
+        label: Descripción
+        type: textarea
+        size: small
+      brigadesCards:
+        label: Tarjetas
+        type: structure
+        columns:
+          title: true
+          tag: true
+        fields:
+          icon:
+            extends: fields/icon
+            width: 1/3
+          title:
+            label: Título
+            type: text
+            width: 2/3
+          text:
+            label: Texto
+            type: textarea
+            size: small
+          tag:
+            label: Etiqueta inferior
+            type: text

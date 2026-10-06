@@ -1,0 +1,13 @@
+title: Nosotros
+
+options:
+  changeTemplate: false
+
+tabs:
+  hero: tabs/about/hero
+  story: tabs/about/story
+  mission: tabs/about/mission
+  goals: tabs/about/goals
+  values: tabs/about/values
+  cta: tabs/about/cta
+  seo: tabs/seo
